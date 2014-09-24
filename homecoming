@@ -1,0 +1,40 @@
+
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="description" content="Awesome Description Here">
+  <title>im the baby</title>
+<style>
+body,html {
+    overflow: hidden;
+    margin:0 0 0 0;
+}
+
+#credits{
+  color:white;
+  position:absolute;bottom:0;text-align:center;
+  width: 100%;
+  left: 0px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 600;
+}
+</style>
+</head>
+<body>
+<iframe id="video" src="http://www.youtube.com/embed/opeKXawfxrQ?&loop=1&controls=0&showinfo=0&autoplay=1&start=69" frameborder="0" allowfullscreen></iframe>
+<div id="credits">
+  <h1>go to homecoming with me &lt;/3</h1>
+  </div>
+<script id="jsbin-javascript">
+$(function(){
+  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+  $(window).resize(function(){
+    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+  });
+});
+
+</script>
+</body>
+</html>
