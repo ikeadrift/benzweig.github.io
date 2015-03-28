@@ -1,0 +1,38 @@
+/*
+ * Created with iconvau.lt
+ */
+
+@font-face {
+  font-family: "p4k";
+  src: url("p4k_657b9ab73b2108d331f8043bf59c094f.eot");
+  src: url("p4k_657b9ab73b2108d331f8043bf59c094f.eot?#iefix") format("embedded-opentype"),
+       url("p4k_657b9ab73b2108d331f8043bf59c094f.woff") format("woff"),
+       url("p4k_657b9ab73b2108d331f8043bf59c094f.ttf") format("truetype"),
+       url("p4k_657b9ab73b2108d331f8043bf59c094f.svg#p4k") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-social-youtube:before,
+.icon-social-tumblr:before,
+.icon-social-facebook:before,
+.icon-social-spotify:before,
+.icon-social-twitter:before,
+.icon-social-instagram:before {
+  font-family: "p4k";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.icon-social-youtube:before { content: "\f100"; }
+.icon-social-tumblr:before { content: "\f101"; }
+.icon-social-facebook:before { content: "\f102"; }
+.icon-social-spotify:before { content: "\f103"; }
+.icon-social-twitter:before { content: "\f104"; }
+.icon-social-instagram:before { content: "\f105"; }

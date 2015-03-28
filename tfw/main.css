@@ -1,0 +1,46 @@
+@font-face{
+    font-family: 'camcorder_reg_web';
+	src: url('fonts/camcorder_reg_web-webfont.eot');
+	src: url('fonts/camcorder_reg_web-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/camcorder_reg_web-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+}
+
+body{
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'camcorder_reg_web';
+    padding: 0 0 0 0;
+    height:100%;
+    background-size: 100% 100%; /* must be a numerical value to transition */
+    background-repeat:no-repeat;
+    background-position: center center;
+    -webkit-transition: background-size 8s ease-in-out;
+    transition: background-size 8s ease-in-out;
+}
+
+h3{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.trans {
+    background-size: 200% 200%;
+}
+#title{
+    margin-bottom: -2px;
+}
+#UI{
+    margin-top: 34vh;
+    
+}
+
+#submit{
+    margin-top: 14px;
+}
+#overlay{
+    margin-top: 80vh;
+    color:white;
+    font-size: 10vw;
+}

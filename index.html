@@ -1,41 +1,183 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>what's up</title>
-  <style>
+  <title>Ben Zweig</title>
 
-.owl {
-    -webkit-animation-name: rotate; 
-    -webkit-animation-duration: .75s; 
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: rotate; 
-    -moz-animation-duration: 0.75s; 
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-}
-@-webkit-keyframes rotate {
-    0% {-webkit-transform: rotate(0deg);}
-    25% {-webkit-transform: rotate(12deg);}
-    50% {-webkit-transform: rotate(0deg);}
-    75% {-webkit-transform: rotate(-12deg);}
-    100% {-webkit-transform: rotate(0deg);}
-}
+  <meta charset="utf-8">
+  <meta name ="viewport" content = "initial-scale = 1.0, user-scalable = no, minimal-ui">
 
-@-moz-keyframes rotate {
-     0% {-webkit-transform: rotate(0deg);}
-    25% {-webkit-transform: rotate(12deg);}
-    50% {-webkit-transform: rotate(0deg);}
-    75% {-webkit-transform: rotate(-12deg);}
-    100% {-webkit-transform: rotate(0deg);}
-}
-  </style>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="content.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
 </head>
-<body style="background-color:white;">
-<img class="owl" src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xpa1/t39.1997-6/p128x128/851565_233289230162841_617880097_n.png" style="text-align:center;margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;">
+
+<body>
+  <div id="top">
+    <h1 id="title">hey, i'm ben.</h1>
+    
+    <div class="container-wrapper">
+      <div class="container">
+        <div id="email">
+          <img class="icon" style="background-color:#40ABFF;" src="images/t_circle@2x.png">
+          <img class="iconglyph" src="images/mail_icon.png">
+        </div>
+      
+        <div id="projects">
+          <a href="#"><img class="icon" style="background-color:#37EE12" src="images/t_circle@2x.png"></a>
+          <img class="iconglyph" src="images/projects_icon.png">
+        </div>
+      
+        <div id="bio">
+          <a href="#"><img class="icon" style="background-color:#FF574E;" src="images/t_circle@2x.png"></a>
+          <img class="iconglyph" src="images/bio_icon.png">
+        </div>
+      
+      </div>
+    </div>
+  </div>
   
+  <div id="bottom">
+    <!-- default contents -->
+    <div class="images">
+      <img id="picture" class="displayed" src="images/jamin1.png">
+      <img id="picture_blinking" class="hidden" src="images/blinky.png">
+    </div>
+
+    <!-- contact -->
+    <div class="contact hidden" style="padding-top:14px;">
+      <h1>email</h1>
+      <h1 class="contactLink"><a style="color:#40ABFF;" href="mailto:ben@tfzweig.com">ben@tfzweig.com</a></h1>
+      <h1><br></h1>
+      <h1>github</h1>
+      <h1 class="contactLink"><a style="color:#40ABFF;" href="https://github.com/benzweig">@benzweig</a></h1>
+      <h1><br></h1>
+      <h1>twitter</h1>
+      <h1 class="contactLink"><a style="color:#40ABFF;" href="https://twitter.com/tfzweig">@tfzweig</a></h1>
+      
+
+    </div>
+    <!-- projects -->
+    <div class="projectstext hidden">
+      <!--<h1 class="greentext">things i've made.</h1>-->
+      
+      <br>
+      <div class="projectcontainer">
+        
+        <a href="http://ben-pics.tumblr.com/" target="_blank">
+        <div class="projectcell photography">
+          <img class="projpic" src="images/camera@2x.png" style="margin-top:34px;width:76px;">
+          <div class="projectbar">
+            <h1 class="lefttext">photography</h1>
+            <h1 class="bottomlefttext">most pictures<br>taken with an iphone, minimal post-processing.</h1>
+            <h1 class="righttext">blog</h1>
+          </div>
+        </div>
+      </a>
+      <a href="http://challengepost.com/software/sonar-qrowh" target="_blank">
+        <div class="projectcell sonar">
+          <img class="projpic" src="images/newicon@2x.png" style="margin-top:28px;width:74px;">
+          <div class="projectbar">
+            <h1 class="lefttext">sonar</h1>
+            <h1 class="bottomlefttext">won best<br>iOS app at<br>MHacks IV.<br></h1>
+            <h1 class="righttext">app</h1>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=puQZhcReUvU" target="_blank">
+        <div class="projectcell askey">
+          <img class="projpic" src="images/askey@2x.png" style="margin-top:28px;width:74px;">
+          <div class="projectbar">
+            <h1 class="lefttext">askey</h1>
+            <h1 class="bottomlefttext">custom<br>drawing<br>keyboard<br>for iOS 8.<br></h1>
+            <h1 class="righttext">app</h1>
+          </div>
+        </div>
+      </a>
+      <a href="http://cydia.saurik.com/package/org.thebigboss.brevity2/" target="_blank">
+        <div class="projectcell brevity">
+          <img class="projpic" src="images/brevity@2x.png" style="margin-top:16px;width:100px;">
+          <div class="projectbar">
+            <h1 class="lefttext">brevity 2</h1>
+            <h1 class="bottomlefttext">a quick-reply<br>tweak for iOS, availible now<br>on cydia.</h1>
+            <h1 class="righttext">tweak</h1>
+          </div>
+        </div>
+      </a>
+        <a href="http://f.cl.ly/items/3b0r1K3d1c3v0h2H383K/Mixed%20Sound.mov" target="_blank">
+        <div class="projectcell sunrise">
+          <img class="projpic" src="images/sun@2x.png" style="margin-top:27px;width:76px;">
+          <div class="projectbar">
+          <h1 class="lefttext">sunrise</h1>
+          <h1 class="bottomlefttext">first of a few mockups for<br>an interview<br>at sunrise.</h1>
+          <h1 class="righttext">concept</h1>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=l-i1T8q7l6o"target="_blank">
+        <div class="projectcell quickyo">
+          <img class="projpic" src="images/quickyo@2x.png" style="margin-top:24px;width:84px;">
+          <div class="projectbar">
+            <h1 class="lefttext">quickyo</h1>
+            <h1 class="bottomlefttext">hackathon<br>project, native<br>yo quick reply<br>for iOS.</h1>
+            <h1 class="righttext">project</h1>
+          </div>
+        </div>
+      </a>
+      <a href="https://soundcloud.com/jaminzweig/sets/mashups"target="_blank">
+      <div class="projectcell soundcloud">
+          <img class="projpic" src="images/soundcloud@2x.png" style="margin-top:11px;width:102px;">
+          <div class="projectbar">
+          <h1 class="lefttext">soundcld</h1>
+          <h1 class="bottomlefttext">i said they were mashups. didn't say that they<br>were good.</h1>
+          <h1 class="righttext">"music"</h1>
+          </div>
+        </div>
+      </a>
+       <a href="https://api.medium.com/@tfzweig"target="_blank">
+      <div class="projectcell writing">
+          <img class="projpic" src="images/writing@2x.png" style="margin-top:30px;width:94px;">
+          <div class="projectbar">
+          <h1 class="lefttext">writing</h1>
+          <h1 class="bottomlefttext">short pieces<br>i've written<br>for a variety<br>of reasons. </h1>
+          <h1 class="righttext">misc.</h1>
+          </div>
+        </div>
+      </a>
+      
+      <a href="/composure_home.html"target="_blank">
+        <div class="projectcell composure" style="margin-bottom:40px;">
+          <img class="projpic" src="images/composure@2x.png" style="margin-top:21px;width:92px;">
+          <div class="projectbar">
+            <h1 class="lefttext">composure</h1>
+            <h1 class="bottomlefttext">website &amp; demo<br>for composure,<br>an iOS app for quickly posting.</h1>
+            <h1 class="righttext">app</h1>
+          </div>
+        </div>
+      </a>
+        
+      </div>
+    </div>
+
+    <!-- bio -->
+    <div class="biotext hidden" style="padding-top:14px;font-size:100%;overflow-y:scroll;">
+      <h1 class="redtext">i'm <span style="color: #FF574E;" id="bio2">17 years old</span>,</h1>
+      <h1 class="redtext">i live in <span style="color: #FF574E;" id="bio3">california</span>.</h1>
+      <h1><br></h1>
+      <h1 class="redtext">i'm a <span id="projects2" style="color: #37EE12;">designer</span></h1>
+        <h1 class="redtext">who's passionate<br>about the intersection<br>of <span id="projects3" style="color: #37EE12;">art &amp; technology</span>.</h1>
+        <h1><br></h1>
+        <h1><a href="https://soundcloud.com/jaipaul/jai-paul-jasmine">here's a cool song</a>,</h1>
+        <h1><a href="http://cachemonet.com/">and here's some art</a>.</h1>
+       <h1><br></h1>
+      <h1 class="bluelink">let's <span style="color:#40ABFF;" id="email2">get in touch</span>.</h1>
+    </div>
+  </div>
+
 </body>
+
 </html>
