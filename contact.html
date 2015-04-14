@@ -29,10 +29,10 @@
     background-color: #F9F9F9 !important;
     }
     }
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
     #navLogo{
-    display:hidden;
-  }
+      display:block !important;
+    }
     }
     .projectCell{
     margin:0 auto;
@@ -121,7 +121,7 @@
     <nav class="navbar navbar-default" style="margin-bottom:64px;">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <img id="navLogo" src="images/glasses.png" style="position:absolute;margin-top: 12px;left:calc(50% - 35px);">
+        <img id="navLogo" src="images/glasses.png" style="position:absolute;margin-top: 13px;left:calc(50% - 35px);display:hidden;">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
