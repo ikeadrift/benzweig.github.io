@@ -19,9 +19,35 @@
     #instantclick-bar {
     background: #FF6643 !important;
     }
+    .letter{
+      -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+    }
+    .envelope{
+      -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+    }
     @media (min-width: 768px) {
     #navLogo{
       display:block !important;
+    }
+    .contactArt:hover .letter{
+      margin-left: 0px !important;
+       -ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    transform: rotate(3deg);
+    }
+
+    .contactArt:hover .envelope{
+      margin-left: -72px !important;
+       -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
+    }
     }
     
     .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
@@ -140,8 +166,12 @@
         
         
         <div class="container" id="projectsContainer">
-          <img src="images/letter.png" style="margin: 0 auto; display:block;margin-bottom:-100;">
-          <img src="images/envelope.png" style="margin: 0 auto; display:block;margin-bottom:56px;">
+
+        <div class="contactArt" style="margin: auto;text-align:center;margin-bottom:52px;">
+          <img class="letter" src="images/letter.png" style="margin-right:-168px;">
+          <img class="envelope" src="images/envelope.png" style="">
+        </div>
+
           <h1 id="title" style="margin-bottom:62px;">Like you, I'm<br>on the internet.</h1>
           <div class="row">
             <a href="mailto:ben@hi-lite.co">
