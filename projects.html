@@ -22,12 +22,42 @@
     background: #66E057 !important;
     }
 
+    .green, .blue, .pink{
+      -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  -ms-transition: all 0.15s ease-out;
+    }
+
     @media (min-width: 950px) {
   #navLogo{
       display:block !important;
     }
 }
     @media (min-width: 768px) {
+      .contactArt{
+        width:30vw;
+      }
+      .contactArt:hover .green{
+      
+       -ms-transform: rotate(4deg); /* IE 9 */
+4   -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    transform: rotate(4deg);
+    }
+
+    .contactArt:hover .blue{
+     
+       -ms-transform: rotate(-4deg); /* IE 9 */
+    -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+    transform: rotate(-4deg);
+    }
+
+    .contactArt:hover .pink{
+      
+       -ms-transform: rotate(4deg); /* IE 9 */
+    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    transform: rotate(4deg);
+    }
     
     .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     background-color: #F9F9F9 !important;
@@ -150,7 +180,12 @@
         
         
         <div class="container" class="projectsContainer">
-          <img src="images/markers.png" style="margin: 0 auto; display:block;margin-bottom:56px;">
+          <div class="contactArt" style="margin: auto;text-align:center;margin-bottom:52px;">
+            <img class="green" src="images/green.png" style="height:24px;display:block;margin-bottom:28px;margin-left:auto;margin-right:auto;">
+            <img class="blue"src="images/blue.png" style="height:24px;display:block;margin-bottom:28px;margin-left:auto;margin-right:auto;">
+            <img class="pink"src="images/pink.png" style="height:24px;display:block;margin-bottom:56px;margin-left:auto;margin-right:auto;">
+         </div>
+          
           <h1 id="title">Right now, I work with...</h1>
           <div class="row">
             
