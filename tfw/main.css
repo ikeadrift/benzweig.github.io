@@ -1,8 +1,8 @@
 @font-face{
     font-family: 'camcorder_reg_web';
-	src: url('fonts/camcorder_reg_web-webfont.eot');
-	src: url('fonts/camcorder_reg_web-webfont.eot?#iefix') format('embedded-opentype'),
-		url('fonts/camcorder_reg_web-webfont.woff') format('woff');
+	src: url('fonts/camcorder_ol2_web-webfont.eot');
+	src: url('fonts/camcorder_ol2_web-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/camcorder_ol2_web-webfont.woff') format('woff');
     font-weight: normal;
 	font-style: normal;
 }
