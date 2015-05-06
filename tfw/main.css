@@ -40,14 +40,14 @@ h3{
     margin-top: 14px;
 }
 #overlay{
-    color:black;
+    color:black !important;
     margin-top: 80vh;
     color:white;
     font-size: 10vw;
     color: white;
     text-shadow:
-    -2px -2px 0 #FFF,
-    2px -2px 0 #FFF,
-    -2px 2px 0 #FFF,
-    2px 2px 0 #FFF;
+    -5px -5px 0 #FFF,
+    5px -5px 0 #FFF,
+    -5px 5px 0 #FFF,
+    5px 5px 0 #FFF;
 }
