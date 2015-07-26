@@ -11,14 +11,20 @@ Released under the MIT license: http://jsbin.mit-license.org
 <html>
 <head>
 <meta name="viewport" content="initial-scale = 1.0, user-scalable = no, minimal-ui">
-<script src="https://code.jquery.com/jquery.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>!function(a,b,c,d){function e(b,c){this.element=a(b),this.settings=a.extend({},w,c),this._defaults=w,this._name=m,this.init()}function f(b){v&&(b.element.addClass("navbar-hidden").animate({top:-b.element.height()},{queue:!1,duration:b.settings.animationDuration}),a(".dropdown.open .dropdown-toggle",b.element).dropdown("toggle"),v=!1)}function g(a){v||(a.element.removeClass("navbar-hidden").animate({top:0},{queue:!1,duration:a.settings.animationDuration}),v=!0)}function h(a){var b=n.scrollTop(),c=b-t;if(t=b,0>c){if(v)return;(a.settings.showOnUpscroll||l>=b)&&g(a)}else if(c>0){if(!v)return void(a.settings.showOnBottom&&b+u===o.height()&&g(a));b>=l&&f(a)}}function i(a){a.settings.disableAutohide||(s=(new Date).getTime(),h(a))}function j(a){o.on("scroll."+m,function(){(new Date).getTime()-s>r?i(a):(clearTimeout(p),p=setTimeout(function(){i(a)},r))}),n.on("resize."+m,function(){clearTimeout(q),q=setTimeout(function(){u=n.height()},r)})}function k(){o.off("."+m),n.off("."+m)}var l,m="autoHidingNavbar",n=a(b),o=a(c),p=null,q=null,r=70,s=0,t=null,u=n.height(),v=!0,w={disableAutohide:!1,showOnUpscroll:!0,showOnBottom:!0,hideOffset:"auto",animationDuration:200};e.prototype={init:function(){return this.elements={navbar:this.element},this.setDisableAutohide(this.settings.disableAutohide),this.setShowOnUpscroll(this.settings.showOnUpscroll),this.setShowOnBottom(this.settings.showOnBottom),this.setHideOffset(this.settings.hideOffset),this.setAnimationDuration(this.settings.animationDuration),l="auto"===this.settings.hideOffset?this.element.height():this.settings.hideOffset,j(this),this.element},setDisableAutohide:function(a){return this.settings.disableAutohide=a,this.element},setShowOnUpscroll:function(a){return this.settings.showOnUpscroll=a,this.element},setShowOnBottom:function(a){return this.settings.showOnBottom=a,this.element},setHideOffset:function(a){return this.settings.hideOffset=a,this.element},setAnimationDuration:function(a){return this.settings.animationDuration=a,this.element},show:function(){return g(this),this.element},hide:function(){return f(this),this.element},destroy:function(){return k(this),g(this),a.data(this,"plugin_"+m,null),this.element}},a.fn[m]=function(b){var c=arguments;if(b===d||"object"==typeof b)return this.each(function(){a.data(this,"plugin_"+m)||a.data(this,"plugin_"+m,new e(this,b))});if("string"==typeof b&&"_"!==b[0]&&"init"!==b){var f;return this.each(function(){var d=a.data(this,"plugin_"+m);d instanceof e&&"function"==typeof d[b]&&(f=d[b].apply(d,Array.prototype.slice.call(c,1)))}),f!==d?f:this}}}(jQuery,window,document);</script>
   <meta charset="utf-8">
   <title>MHacks 6</title>
-<style id="jsbin-css">
+<style>
+html {
+ 
+}
+
 body{
   font-family: AvenirNext-Regular;
+
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -162,6 +168,10 @@ a:active {
   background-color:#FCC93E;
 }
 
+.navbar-fixed-top{
+  border-width: 0 0 0px;
+}
+
 .tiltedImage{
   background: linear-gradient(to bottom, rgba(246, 142, 32, 0.3) 0%, rgba(246, 142, 32, 75) 95%, rgba(246, 142, 32, 1) 100%), url('http://i.imgur.com/EDGMOcG.jpg') no-repeat;
   height:200px;
@@ -173,7 +183,7 @@ a:active {
 }
 
 .mlogo{
-  margin-top:-20px;
+  margin-top:120px;
   padding-bottom:16px;
 }
 
@@ -271,15 +281,15 @@ border-radius: 6px;
 }
 
 #socialIcon{
-  padding-left:16px;
-  padding-right:16px;
+  margin-left:16px;
+  margin-right:16px;
 }
 
 
 </style>
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -322,13 +332,15 @@ border-radius: 6px;
   </div>
   
   
-  <div class="container-fluid backgroundTilt coloredTilt1" id="welcome" style="padding-top:120px;margin-top:18px;">
+  <div class="container-fluid backgroundTilt coloredTilt1" id="welcome" style="padding-top:120px;margin-top:90px;">
     <div class="row contentContainer">
       <div class="col-sm-6 col-sm-offset-3" style="text-align:left;">
         
-        <div class="socialRow"><img id="socialIcon" src="http://i.imgur.com/4fVltT4.png">
-        <img id="socialIcon" src="http://i.imgur.com/M1rHAoC.png">
-        <img id="socialIcon" src="http://i.imgur.com/sCV9bxT.png"></div>
+        <div class="socialRow">
+        <a href="https://www.facebook.com/MHacksHackathon"><img id="socialIcon" src="http://i.imgur.com/4fVltT4.png"></a>
+        <a href="https://twitter.com/mhacks"><img id="socialIcon" src="http://i.imgur.com/M1rHAoC.png"></a>
+        <a href="https://medium.com/mhacks-v"><img id="socialIcon" src="http://i.imgur.com/sCV9bxT.png"></a>
+        </div>
         <h2 style="margin-top:40px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;">Come together for 36 hours with the brightest developers, designers, and creators the world has to offer and make something amazing.<br><br>
 As a hacker, you won’t be breaking into databases or security systems. You and your team will be applying your knowledge in app development, web development, hardware, etc in order to create innovative solutions to an existing problem.<br><br>
 No matter the skill level, every hacker has the opportunity to grow and learn. This year, in going back to the core elements of a successful hackathon- mentorship, community, and creation-, MHacks will provide an environment where this growth happens naturally.</h2>
@@ -393,14 +405,16 @@ Interested? Contact us at sponsor@umich.edu.</h2>
         <h2 style="margin-top:00px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;margin-bottom:20px;">© 2015 MHacks
 <br>
 hackathon@umich.edu</h2>
-        <div class="socialRow" style="text-align:left !important; margin-left:6px; margin-bottom:0px; margin-top:0px;"><img id="socialIcon" src="http://i.imgur.com/4fVltT4.png">
-        <img id="socialIcon" src="http://i.imgur.com/M1rHAoC.png">
-        <img id="socialIcon" src="http://i.imgur.com/sCV9bxT.png"></div>
+        <div class="socialRow" style="text-align:left !important; margin-left:6px; margin-bottom:0px; margin-top:0px;">
+        <a href="https://www.facebook.com/MHacksHackathon"><img id="socialIcon" src="http://i.imgur.com/4fVltT4.png"></a>
+        <a href="https://twitter.com/mhacks"><img id="socialIcon" src="http://i.imgur.com/M1rHAoC.png"></a>
+        <a href="https://medium.com/mhacks-v"><img id="socialIcon" src="http://i.imgur.com/sCV9bxT.png"></a>
+      </div>
       </div>
     </div>
   </div>
   
-  <div style="height:100px;width:100%;background-color:#F68E20;margin-top:-50px;"></div>
-  
+  <div style="height:108px;width:100%;background-color:#F68E20;margin-top:-50px;"></div>
 </body>
+<script>$("nav.navbar-fixed-top").autoHidingNavbar();</script>
 </html>
