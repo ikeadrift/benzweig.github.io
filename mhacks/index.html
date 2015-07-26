@@ -9,136 +9,152 @@ Released under the MIT license: http://jsbin.mit-license.org
 -->
 <html>
 <head>
-<meta name="viewport" content="initial-scale = 1.0, user-scalable = no, minimal-ui">
-<script src="http://code.jquery.com/jquery.min.js"></script>
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="./jquery.bootstrap-autohidingnavbar.min.js"></script>
+  <meta name="viewport" content="initial-scale = 1.0, user-scalable = no, minimal-ui">
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="./jquery.bootstrap-autohidingnavbar.min.js"></script>
   <meta charset="utf-8">
   <title>MHacks 6</title>
-<style>
-html {
- 
-}
+  <style>
+  html {
 
-body{
-  font-family: AvenirNext-Regular;
+  }
 
-}
+  body{
+    font-family: AvenirNext-Regular;
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+  }
 
-/* Small devices (tablets, 768px and up) */
+  /* Extra small devices (phones, less than 768px) */
+  /* No media query since this is the default in Bootstrap */
 
-h1{
-  font-size: 36px;
-  font-family: AvenirNext-Medium;
-}
+  /* Small devices (tablets, 768px and up) */
 
-h2{
-  font-size: 24px;
-}
+  h1{
+    font-size: 36px;
+    font-family: AvenirNext-Medium;
+  }
+
+  h2{
+    font-size: 24px;
+  }
 
 
-@media (min-width: 768px) {
-  .backgroundTilt{
-    -webkit-transform: skewY(-0.06rad) !important;
-            transform: skewY(-0.06rad) !important;
-  }
-  
-  .tiltedImage{
-    -webkit-transform: skewY(-0.06rad) !important;
-            transform: skewY(-0.06rad) !important;
-  }
-  
-  .contentContainer{
-  -webkit-transform: skewY(0.06rad) !important;
-          transform: skewY(0.06rad) !important;
-  }
-  
-  .navbar-nav{
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-    float:none;
-  }
-}
+  @media (max-width: 320px) {
+    .mlogo{
+      width:50px !important;
+    }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .backgroundTilt{
-    -webkit-transform: skewY(-0.05rad) !important;
-            transform: skewY(-0.05rad) !important;
   }
-  
-  .tiltedImage{
-    -webkit-transform: skewY(-0.05rad) !important;
-            transform: skewY(-0.05rad) !important;
-  }
-  .contentContainer{
-  -webkit-transform: skewY(0.05rad) !important;
-          transform: skewY(0.05rad) !important;
-  }
-  #desktopContent{
-    color: grey !important;
-  }
-}
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .backgroundTilt{
-    -webkit-transform: skewY(-0.04rad) !important;
-            transform: skewY(-0.04rad) !important;
-  }
-  
-   .tiltedImage{
-    -webkit-transform: skewY(-0.04rad) !important;
-            transform: skewY(-0.04rad) !important;
-  }
-  
-  .contentContainer{
-  -webkit-transform: skewY(0.04rad) !important;
-          transform: skewY(0.04rad) !important;
-  }
-}
+  @media (min-width: 768px) {
 
-/* unvisited link */
-a:link {
+    .mlogo{
+      padding-bottom: 16px !important;
+    }
+
+    .button{
+      margin-top:40px !important;
+    }
+
+    .backgroundTilt{
+      -webkit-transform: skewY(-0.06rad) !important;
+      transform: skewY(-0.06rad) !important;
+    }
+
+    .tiltedImage{
+      -webkit-transform: skewY(-0.06rad) !important;
+      transform: skewY(-0.06rad) !important;
+    }
+
+    .contentContainer{
+      -webkit-transform: skewY(0.06rad) !important;
+      transform: skewY(0.06rad) !important;
+    }
+
+    .navbar-nav{
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+      float:none;
+    }
+  }
+
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .backgroundTilt{
+      -webkit-transform: skewY(-0.05rad) !important;
+      transform: skewY(-0.05rad) !important;
+    }
+
+    .tiltedImage{
+      -webkit-transform: skewY(-0.05rad) !important;
+      transform: skewY(-0.05rad) !important;
+    }
+    .contentContainer{
+      -webkit-transform: skewY(0.05rad) !important;
+      transform: skewY(0.05rad) !important;
+    }
+    #desktopContent{
+      color: grey !important;
+    }
+  }
+
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .backgroundTilt{
+      -webkit-transform: skewY(-0.04rad) !important;
+      transform: skewY(-0.04rad) !important;
+    }
+
+    .tiltedImage{
+      -webkit-transform: skewY(-0.04rad) !important;
+      transform: skewY(-0.04rad) !important;
+    }
+
+    .contentContainer{
+      -webkit-transform: skewY(0.04rad) !important;
+      transform: skewY(0.04rad) !important;
+    }
+  }
+
+  /* unvisited link */
+  a:link {
     color: white;
     text-decoration:none;
-}
+  }
 
-/* visited link */
-a:visited {
+  /* visited link */
+  a:visited {
     color: white;
     text-decoration:none;
-}
+  }
 
-/* mouse over link */
-a:hover {
+  /* mouse over link */
+  a:hover {
     color: white;
     text-decoration:none;
-}
+  }
 
-/* selected link */
-a:active {
+  /* selected link */
+  a:active {
     color: white;
     text-decoration:none;
-}
+  }
 
-.navbar-default{
-  background-color:white !important;
-  border-color:white !important;
-  color:#FCC93E;
-}
+  .navbar-default{
+    background-color:white !important;
+    border-color:white !important;
+    color:#FCC93E;
+  }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
    background-color:#FCC93E;
-  color:white;
-}
+   color:white;
+ }
 
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus{
+ .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus{
   font-size: 18px;
   color:#FCC93E;
 }
@@ -171,19 +187,26 @@ a:active {
   border-width: 0 0 0px;
 }
 
+.dropdown-menu>li>a {
+  color:#F68E20;
+}
+.dropdown-menu>li>a:hover{
+  color:#F68E20;
+}
+
 .tiltedImage{
   background: linear-gradient(to bottom, rgba(246, 142, 32, 0.3) 0%, rgba(246, 142, 32, 75) 95%, rgba(246, 142, 32, 1) 100%), url('http://i.imgur.com/EDGMOcG.jpg') no-repeat;
   height:200px;
   background-position: 50% 18%;
-    background-size: cover;
+  background-size: cover;
   margin-bottom:-1px;
-    -webkit-transform: skewY(-0.08rad);
-            transform: skewY(-0.08rad);
+  -webkit-transform: skewY(-0.08rad);
+  transform: skewY(-0.08rad);
 }
 
 .mlogo{
-  margin-top:120px;
-  padding-bottom:16px;
+  margin-top:150px;
+  padding-bottom:0px;
 }
 
 #question{
@@ -192,32 +215,49 @@ a:active {
 
 .button{
   /* Mask: */
-background-color:#FCC93E;
-border-radius: 6px;
+  background-color:#FCC93E;
+  border-radius: 6px;
   margin:0 auto;
   border-radius:6px;
   height:60px;
   width:150px;
   color:white;
-  margin-top:40px;
+  margin-top:20px;
   text-align:center;
-
-  
 }
 
 .button h1{
   font-size:20px !important;
-   line-height:58px;
+  line-height:58px;
   font-family: AvenirNext-Medium;
   
 }
 
+.FAQbutton{
+  /* Mask: */
+  background-color:white;
+  border-radius: 6px;
+  margin:0 auto;
+  border-radius:6px;
+  height:60px;
+  width:150px;
+  color:#F68E20;
+  margin-top:40px;
+  text-align:center;
+}
+
+.FAQbutton h1{
+  font-size:20px !important;
+  line-height:58px;
+  font-family: AvenirNext-Medium;
+}
+
 .backgroundTilt{
   color:#F68F20;
-    padding-top:100px;
-    padding-bottom:100px;
+  padding-top:100px;
+  padding-bottom:100px;
   -webkit-transform: skewY(-0.08rad);
-          transform: skewY(-0.08rad);
+  transform: skewY(-0.08rad);
 }
 
 .coloredTilt1{
@@ -232,7 +272,7 @@ border-radius: 6px;
 
 .contentContainer{
   -webkit-transform: skewY(0.08rad);
-          transform: skewY(0.08rad);
+  transform: skewY(0.08rad);
   
 }
 
@@ -241,7 +281,7 @@ border-radius: 6px;
   text-align:center;
   color:#FCC93E;
   height:100vh;
- margin-top:-70px;
+  margin-top:-70px;
 }
 
 .pageHeading h1{
@@ -258,18 +298,18 @@ border-radius: 6px;
   display:-ms-flexbox;
   display:flex;
   -webkit-align-items:center;
-      -ms-flex-align:center;
-          align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
   height:100vh;
   min-height:500px;
   width:100%;
   -webkit-justify-content:center;
-      -ms-flex-pack:center;
-          justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
 }
 
 .headerRow{
-  
+
 }
 
 .socialRow{
@@ -288,61 +328,63 @@ border-radius: 6px;
 </style>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-    </div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <h3 class="visible-xs" style="margin-top: 0px; color: #FCC93E;">MHacks 6</h3>    
+        </a>
+      </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#top">MHacks 6</a></li>
-        <li><a href="#welcome">Welcome</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#sponsor">Sponsor</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-   <div class="container-fluid pageHeading" id="top">
-     <div class="flexBoxer">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#top">Apply</a></li>
+          <li><a href="#welcome">Welcome</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#sponsor">Sponsor</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="container-fluid pageHeading" id="top">
+   <div class="flexBoxer">
     <div class="row headerRow" style="width:100%;margin-top:-30px;">
       <div class="col-sm-6 col-sm-offset-3"> 
         <img class="mlogo" src="http://i.imgur.com/Rn8rWHd.png">
         <h1 style="font-weight:600;">MHacks 6</h1>
         <div id="desktopContent">
-        <h3>September 11th-13th</h3>
-        <h3>University of Michigan</h3>
-        <h3>North Campus</h3>
+          <h3>September 11th-13th</h3>
+          <h3>University of Michigan</h3>
+          <h3>North Campus</h3>
           <div class="button"><a href="http://mhacks.org/apply"><h1>Apply</h1></a></div>
         </div>
       </div>
     </div>
-       </div>
   </div>
-  
-  
-  <div class="container-fluid backgroundTilt coloredTilt1" id="welcome" style="padding-top:120px;margin-top:90px;">
-    <div class="row contentContainer">
-      <div class="col-sm-6 col-sm-offset-3" style="text-align:left;">
-        
-        <div class="socialRow">
+</div>
+
+
+<div class="container-fluid backgroundTilt coloredTilt1" id="welcome" style="padding-top:120px;margin-top:90px;">
+  <div class="row contentContainer">
+    <div class="col-sm-6 col-sm-offset-3" style="text-align:left;">
+
+      <div class="socialRow">
         <a href="https://www.facebook.com/MHacksHackathon"><img id="socialIcon" src="http://i.imgur.com/4fVltT4.png"></a>
         <a href="https://twitter.com/mhacks"><img id="socialIcon" src="http://i.imgur.com/M1rHAoC.png"></a>
         <a href="https://medium.com/mhacks-v"><img id="socialIcon" src="http://i.imgur.com/sCV9bxT.png"></a>
-        </div>
-        <h2 style="margin-top:40px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;">Come together for 36 hours with the brightest developers, designers, and creators the world has to offer and make something amazing.<br><br>
-As a hacker, you won’t be breaking into databases or security systems. You and your team will be applying your knowledge in app development, web development, hardware, etc in order to create innovative solutions to an existing problem.<br><br>
-No matter the skill level, every hacker has the opportunity to grow and learn. This year, in going back to the core elements of a successful hackathon- mentorship, community, and creation-, MHacks will provide an environment where this growth happens naturally.</h2>
+      </div>
+      <h2 style="margin-top:40px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;">Come together for 36 hours with the brightest developers, designers, and creators the world has to offer and make something amazing.<br><br>
+        As a hacker, you won’t be breaking into databases or security systems. You and your team will be applying your knowledge in app development, web development, hardware, etc in order to create innovative solutions to an existing problem.<br><br>
+        No matter the skill level, every hacker has the opportunity to grow and learn. This year, in going back to the core elements of a successful hackathon- mentorship, community, and creation-, MHacks will provide an environment where this growth happens naturally.</h2>
       </div>
     </div>
   </div>
@@ -352,10 +394,10 @@ No matter the skill level, every hacker has the opportunity to grow and learn. T
   <div class="container-fluid backgroundTilt" id="about">
     <div class="row contentContainer">
       <div class="col-sm-6 col-sm-offset-3" style="text-align:left;">
-         <h1 style="font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;margin-bottom:20px;">About</h1>
-        <h2 style="padding-top:0px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;">With MLH’s hardware lab as well as our own hardware, MHacks 6 will have all the resources you need to create something you’re  proud of. To help you step out of your comfort zone, we have an awesome lineup of sponsor-led tech talks and workshops where hackers dabble in new technologies. Dream big, hack bigger.<br><br>
-You, the hackers, are the most important part of MHacks. We don’t want you to build just hacks; we want you to build relationships with the incredible people around you, because it's the snowball fights, dance parties, and midnight Insomnia cookies that you'll remember the most.<br><br>
-No one should be afraid to ask for help. If you plan on working with a specific technology, join one of our cortices — spaces where people hack on the same type of tech, together. This year, we’re offering six different cortices: iOS, Android, Web Development, Virtual Reality/Game Development, Hardware, and Social Impact. Mentors in each cortex will be there to help you out.</h2>
+       <h1 style="font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;margin-bottom:20px;">About</h1>
+       <h2 style="padding-top:0px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;">With MLH’s hardware lab as well as our own hardware, MHacks 6 will have all the resources you need to create something you’re  proud of. To help you step out of your comfort zone, we have an awesome lineup of sponsor-led tech talks and workshops where hackers dabble in new technologies. Dream big, hack bigger.<br><br>
+        You, the hackers, are the most important part of MHacks. We don’t want you to build just hacks; we want you to build relationships with the incredible people around you, because it's the snowball fights, dance parties, and midnight Insomnia cookies that you'll remember the most.<br><br>
+        No one should be afraid to ask for help. If you plan on working with a specific technology, join one of our cortices — spaces where people hack on the same type of tech, together. This year, we’re offering six different cortices: iOS, Android, Web Development, Virtual Reality/Game Development, Hardware, and Social Impact. Mentors in each cortex will be there to help you out.</h2>
       </div>
     </div>
   </div>
@@ -366,61 +408,119 @@ No one should be afraid to ask for help. If you plan on working with a specific 
   <div class="container-fluid backgroundTilt coloredTilt2">
     <div class="row contentContainer">
       <div class="col-sm-6 col-sm-offset-3" style="text-align:left;">
-        <h1 style="margin-top:0px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;">FAQ</h1>
-        <h2 style="margin-top:0px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;"><span id="question";>Q: When and where is MHacks?</span><br>;
-        A: MHacks 6 will open the doors for hacker registration on the evening of Friday, September 11th on the University of Michigan's North Campus. More details will become available as we near the event.<br><br>
-          <span id="question">Q: What should I bring?</span><br>
-        A: Bring your laptop, phone, student ID, toiletries, water bottle, a change of clothes, and a sense of adventure. We'll do our best to get you anything else you might need.<br><br>
-          <span id="question";>Q: What should I bring?</span><br>;
-        A: Your laptop, a sleeping bag, and a thirst for adventure.<br><br>
-          <span id="question";>Q: What can't I bring?</span><br>
-        A: Weapons of any kind, drugs, alcohol, and dank memes.<br><br>
-          <span id="question">Q: What can I hack on?</span><br>
-        A: We'll be providing lots of awesome hardware to hack on, courtesy of our sponsors. Stay tuned to this page and MHacks social media for updates.<br><br>
-        </h2>
+        <span><h1 style="display:inline-block;margin-top:0px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;margin-bottom:0px;">FAQ</h1>
+          <div class="dropdown" style="margin-left:120px;margin-bottom:36px;margin-top:-44px;background-color:white;border-radius:5px;width:90px;">
+            <button style="border:none; color:#F68E20; width:90px;padding-bottom:4px;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Hacking
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a id="DDhacking">Hacking</a></li>
+              <li><a id="DDtravel">Travel</a></li>
+              <li><a id="DDwhatif">What If?</a></li>
+            </ul>
+          </div></span>
+
+
+
+          <h2 id="hacking" style="margin-top:0px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;">
+            <span id="question";>Q: When and where is MHacks?</span><br>;
+            A: MHacks 6 will open the doors for hacker registration on the evening of Friday, September 11th on the University of Michigan's North Campus. More details will become available as we near the event.<br><br>
+            <span id="question">Q: What should I bring?</span><br>
+            A: Bring your laptop, phone, student ID, toiletries, water bottle, a change of clothes, and a sense of adventure. We'll do our best to get you anything else you might need.<br><br>
+            <span id="question";>Q: What can't I bring?</span><br>
+            A: Weapons of any kind, drugs, alcohol, and dank memes.<br><br>
+            <span id="question">Q: What can I hack on?</span><br>
+            A: We'll be providing lots of awesome hardware to hack on, courtesy of our sponsors. Stay tuned to this page and MHacks social media for updates.<br><br>
+          </h2>
+
+          <h2 id="travel" style="display:none;margin-top:0px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;">
+            <span id="question";>Q: How will I get to MHacks?</span><br>;
+            A: After your registration is confirmed and you receive word that you're coming to MHacks, we'll share information about buses and travel reimbursements. More than likely, we'll be sending a bus to a school near you.<br><br>
+            <span id="question">Q: If I fly, will I be reimbursed?</span><br>
+            A: Not everyone who sends in a reimbursement request will receive a reimbursement. Each request will be reviewed on a case-by-case basis and reimbursements will be distributed accordingly.<br><br>
+          </h2>
+
+          <h2 id="whatif" style="display:none;margin-top:0px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;">
+            <span id="question";>Q: What if I don't have an idea?</span><br>;
+            A: No problem! Many hackers arrive at a hackathon with little to no idea of what they'll be building. Check out our API expo to see what's available to you from our sponsors. Aim for a prize, or don't. Totally up to you.<br><br>
+            <span id="question">Q: What if I don't have a team?</span><br>;
+            A: A few weeks before MHacks, we'll connect registered hackers with a database of other available hackers looking for a team. If this is your first hackathon, there will definitely be others without prior experience who are looking for team members, so don't worry!<br><br>
+            <span id="question";>Q: What if I live far away?</span><br>;
+            A: We are able to provide travel reimbursements for hackers depending on location and availability of transportation. Travel reimbursements must be explicitly approved, and you will be notified if you receive a reimbursement.<br><br>
+            <span id="question";>Q: What if I don't want to hack?</span><br>
+            A: We invite you to come see the expo on Sunday as everyone finishes up their hacks. We'll be sharing more information about the public expo soon. If you don’t want to hack, there's no need to fill out the MHacks registration application.<br><br>
+          </h2>
+
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="container-fluid backgroundTilt" id="sponsor">
-    <div class="row contentContainer">
-      <div class="col-sm-6 col-sm-offset-3" style="text-align:left;">
+
+    <div class="container-fluid backgroundTilt" id="sponsor">
+      <div class="row contentContainer">
+        <div class="col-sm-6 col-sm-offset-3" style="text-align:left;">
          <h1 style="font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;margin-bottom:20px;">Sponsorship</h1>
-        <h2 style="padding-top:0px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;color:#A8A8A8;padding-bottom:16px;">MHacks is the bridge between your company and the planet’s top tech talent.
-<br><br>
-Whether you’re here to network, promote your brand, or gain feedback, we’ll give you the tools you need to make the most of your experience.
-<br><br>
-Interested? Contact us at sponsor@umich.edu.</h2>
+         <h2 style="padding-top:0px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;color:#A8A8A8;padding-bottom:16px;">MHacks is the bridge between your company and the planet’s top tech talent.
+          <br><br>
+          Whether you’re here to network, promote your brand, or gain feedback, we’ll give you the tools you need to make the most of your experience.
+          <br><br>
+          Interested? Contact us at <a style="color:#A8A8A8;" href="mailto:sponsor@umich.edu">sponsor@umich.edu</a>.</h2>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="container-fluid backgroundTilt coloredTilt1" style="padding-top:30px;padding-bottom:0px !important;">
-    <div class="row contentContainer">
-      <div class="col-sm-6 col-sm-offset-3" style="text-align:left;">
-       
-        <div></div>
-         <h1 style="font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;margin-bottom:-10px;">MHacks 6</h1><br>
-        <h2 style="margin-top:00px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;margin-bottom:20px;">© 2015 MHacks
-<br>
-hackathon@umich.edu</h2>
-        <div class="socialRow" style="text-align:left !important; margin-left:6px; margin-bottom:0px; margin-top:0px;">
-        <a href="https://www.facebook.com/MHacksHackathon"><img id="socialIcon" src="http://i.imgur.com/4fVltT4.png"></a>
-        <a href="https://twitter.com/mhacks"><img id="socialIcon" src="http://i.imgur.com/M1rHAoC.png"></a>
-        <a href="https://medium.com/mhacks-v"><img id="socialIcon" src="http://i.imgur.com/sCV9bxT.png"></a>
+
+    <div class="container-fluid backgroundTilt coloredTilt1" style="padding-top:30px;padding-bottom:0px !important;">
+      <div class="row contentContainer">
+        <div class="col-sm-6 col-sm-offset-3" style="text-align:left;">
+
+          <div></div>
+          <h1 style="font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;margin-bottom:-10px;">MHacks 6</h1><br>
+          <h2 style="margin-top:00px;font-weight:500;line-height:1.5;margin-left:20px;margin-right:20px;margin-bottom:20px;">© 2015 MHacks
+            <br><a href="mailto:hackathon@umich.edu">
+            hackathon@umich.edu</a></h2>
+            <div class="socialRow" style="text-align:left !important; margin-left:6px; margin-bottom:0px; margin-top:0px;">
+              <a href="https://www.facebook.com/MHacksHackathon"><img id="socialIcon" src="http://i.imgur.com/4fVltT4.png"></a>
+              <a href="https://twitter.com/mhacks"><img id="socialIcon" src="http://i.imgur.com/M1rHAoC.png"></a>
+              <a href="https://medium.com/mhacks-v"><img id="socialIcon" src="http://i.imgur.com/sCV9bxT.png"></a>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
-  </div>
-  
-  <div style="height:108px;width:100%;background-color:#F68E20;margin-top:-50px;"></div>
-</body>
-<script>
-$(document).ready(function () {
-  $("nav.navbar-fixed-top").autoHidingNavbar({
-    'showOnBottom': true,
-    'animationDuration': 140
-  });
-});
-</script>
-</html>
+
+      <div style="height:108px;width:100%;background-color:#F68E20;margin-top:-50px;"></div>
+    </body>
+    <script>
+    $(document).ready(function () {
+      $("nav.navbar-fixed-top").autoHidingNavbar({
+        'showOnBottom': true,
+        'animationDuration': 140
+      });
+    });
+    </script>
+
+    <script>
+    $('#travel, #whatif').hide();
+
+    $('#DDtravel').click(function() {
+      console.log("hey");
+      $('#hacking, #whatif').fadeOut();
+      $('#travel').fadeIn();
+      $(".dropdown-toggle").html('Travel <span class="caret"></span>');
+    });
+
+    $('#DDhacking').click(function() {
+      console.log("hey");
+      $('#travel, #whatif').fadeOut();
+      $('#hacking').fadeIn();
+      $(".dropdown-toggle").html('Hacking <span class="caret"></span>');
+    });
+
+    $('#DDwhatif').click(function() {
+      console.log("hey");
+      $('#hacking, #travel').fadeOut();
+      $('#whatif').fadeIn();
+      $(".dropdown-toggle").html('What If? <span class="caret"></span>');
+    });
+    </script>
+    </html>
+'
