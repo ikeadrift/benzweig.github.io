@@ -415,5 +415,12 @@ hackathon@umich.edu</h2>
   
   <div style="height:108px;width:100%;background-color:#F68E20;margin-top:-50px;"></div>
 </body>
-<script>$("nav.navbar-fixed-top").autoHidingNavbar()</script>
+<script>
+$(document).ready(function () {
+  $("nav.navbar-fixed-top").autoHidingNavbar({
+    'showOnBottom': true,
+    'animationDuration': 140
+  });
+});
+</script>
 </html>
