@@ -502,5 +502,13 @@ Released under the MIT license: http://jsbin.mit-license.org
       $('#whatif').fadeIn();
       $(".dropdown-toggle").html('What If? <span class="caret"></span>');
     });
+    
+    //animate anchors
+    $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 800);
+    return false;
+});
     </script>
     </html>
