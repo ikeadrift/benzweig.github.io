@@ -1,186 +1,173 @@
 <!DOCTYPE html>
+<!--
+Copyright (c) 2016 Benjamin Zweig
+-->
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
-    <title>About</title>
+<head>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Benjamin T. F. Zweig</title>
+  <style>
+  @font-face {
+      font-family: 'proxima_nova_softmedium';
+      src: url('fonts/proximanovasoft-medium-webfont.eot');
+      src: url('fonts/proximanovasoft-medium-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/proximanovasoft-medium-webfont.woff2') format('woff2'),
+           url('fonts/proximanovasoft-medium-webfont.woff') format('woff'),
+           url('fonts/proximanovasoft-medium-webfont.ttf') format('truetype'),
+           url('fonts/proximanovasoft-medium-webfont.svg#proxima_nova_softmedium') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
 
-    <style>
-      .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-      color:#42AEFE !important;
+  @font-face {
+      font-family: 'proxima_nova_softsemibold';
+      src: url('fonts/proximanovasoft-semibold-webfont.eot');
+      src: url('fonts/proximanovasoft-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/proximanovasoft-semibold-webfont.woff2') format('woff2'),
+           url('fonts/proximanovasoft-semibold-webfont.woff') format('woff'),
+           url('fonts/proximanovasoft-semibold-webfont.ttf') format('truetype'),
+           url('fonts/proximanovasoft-semibold-webfont.svg#proxima_nova_softsemibold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @media (min-width: 992px) {
+    #waves{
+      margin-top:-16vw !important;
     }
+  }
 
-    body{
-  background-color:#F9F9F9;
-  font-family: 'Montserrat', sans-serif;
-}
+  body{
+    margin: 0 0 0 0;
+    font-family: Proxima Nova Soft;
+    background-color: #FFF;
+    color:#00B5FF;
+  }
 
-#instantclick-bar {
-  background: #42AEFE !important;
-}
+  .header{
+    color: #FFF;
+    background-color: #00B5FF;
+  }
 
-@media (min-width: 768px) {
-    #navLogo{
-      display:block !important;
-    }
-  
-  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-  background-color: #F9F9F9 !important;
-}
-}
+  .header h1{
+    font-weight: 600;
+    margin-top:10px;
+    margin-bottom:26px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.0);
+  }
 
-@media (max-width: 768px) {
- .hideableText{
-   display:hidden;
- }
-}
+  .header h3{
+    max-width:400px;margin-bottom:16px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.0);
+    line-height: 30px;
+  }
 
-.projectCell{
-  margin:0 auto;
-  width:100%;
-  max-width:355px;
-  min-height:144px;
-  border-radius:5px;
-  background-color:white;
-  margin-top:40px;
-  margin-bottom:40px;
-  padding-bottom:6px;
-}
+  .icon{
+    height: 52px;
+    margin-top:40px;
+    margin-bottom:26px;
+    border-radius: 4px;
+  }
 
-.projectCell img{
-  width:56px;
-  height:56px;
-  margin-left:17px;
-  margin-top:21px;
-  border-radius:5px;
-  display:inline;
-}
+  h3{
+    font-weight: 500;
+  }
 
-.projectCell h1{
-  font-size:30px;
-  margin-left:90px;
-  margin-top:-60px;
-  margin-bottom:4px;
-  color:#3B3B3B;
-}
+  #waves{
+    margin-top:-25vh;
+    pointer-events: none;
+    z-index: -10;
+  }
 
-.projectCell p{
-  margin-left:90px;
-  margin-right:14px;
-  font-size:14px;
-  color:#696969;
-  display:;
-}
+  .projectButton{
+    background-color: white;
+    color:#00B5FF;
+    border-radius:7px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: -12px;
+    margin-right: 8px;
+    margin-top:20px;
+    z-index: 10;
 
-#projectText{
-  display:inline;
-}
+  }
 
-#title{
-  color:#696969;
-  text-align:center;
-  font-size:36px;
-  margin-bottom:18px;
-}
-
-#misc{
-  margin:0 0 0 0;
-}
-
-#copyright{
-  text-align:center;
-  color:#696969;
-  margin-bottom:14px;
-}
-
-#contactInfo{
-  padding-top:2px;
-  background-color:white;
-  border-radius:5px;
-  padding-bottom:10px;
-  margin:0 auto;
-  display:block;
-  text-align:center;
-  margin-bottom:40px;
-}
-
-a:link{
-  text-decoration:none;
-}
-
-a:hover{
-  text-decoration:none;
-}
-
-a:active{
-  text-decoration:none;
-}
-
-a:visited{
-  text-decoration:none;
-}
+  .projectButton h3{
+    padding: 15px 15px 12px 14px;
+    margin: 0 0 0 0;
+    font-weight: 600;
+    text-shadow: none;
+    line-height: 24px;
+  }
 
 
+  .socialButton{
+    background-color: #00B5FF;
+    color:white;
+    border-radius:7px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 12px;
+    margin-right: 8px;
+  }
 
-.about a:active {color:#42AEFE !important;} 
-.about a:hover {color:#42AEFE !important;}
 
-.projects a:active {color:#66E057 !important;} 
-.projects a:hover {color:#66E057 !important;}
+  .socialButton h3{
+    padding: 8px 10px 7px 10px;
+    margin: 0 0 0 0;
+    font-weight: 600;
+  }
 
-.contact a:active {color:#FF6643   !important;} 
-.contact a:hover {color:#FF6643   !important;}
-    </style>
-  </head>
-  <body data-no-instant>
-    
-    
-    
-    <nav class="navbar navbar-default" style="margin-bottom:64px;">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <img id="navLogo" src="images/glasses.png" style="position:absolute;margin-top: 13px;left:calc(50% - 35px);display:none;">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" style="font-size:24px;color:#3B3B3B;">Benjamin Zweig</a>
+  #copyright{
+    color:#90A4AE;
+  }
+
+  col-md-4{
+    background-color:blue;
+  }
+
+  .projectCell{
+    border-radius: 7px;
+    background-color: #ECEFF1;
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container-fluid" id="headerContainer" style="background-color:#00B5FF;padding-bottom:18vh;">
+    <div class="container">
+      <div class="header">
+        <img src="http://i.imgur.com/FdNY4d2.png" class="icon">
+        <div id="upperContent">
+          <h1 id="name">Benjamin T. F. Zweig</h1>
+          <h3 class="hidden-xs">Hey.&nbsp;I'm&nbsp;a&nbsp;designer&nbsp;and writer from&nbsp;California. I&nbsp;love&nbsp;to travel.<br><br>I'm fascinated by intersections of&nbsp;art,&nbsp;music,&nbsp;and&nbsp;technology.<br><br>Last updated: Winter 2016.</h3>
+          <h3 class="visible-xs">Hey.&nbsp;I'm&nbsp;a&nbsp;designer&nbsp;and writer from&nbsp;California. I&nbsp;love&nbsp;to travel.<br><br>I'm fascinated by intersections of&nbsp;art, music,&nbsp;and&nbsp;technology.<br><br>Last updated: Winter 2016.</h3>
+
+          <a href="http://projects.zweig.co"><div class="projectButton"><h3>View Projects &nbsp;<span style="font-size:20px;">&#10140;</span></h3></div></a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-          <ul class="nav navbar-nav navbar-right" style="font-size:24px;color:#696969;">
-            
-            <li class="about active"><a href="/index.html" data-instantdata-instant>About <span class="sr-only">(current)</span></a></li>
-            <li class="projects"><a href="/projects.html" data-instant>Projects</a></li>
-            <li class="contact"><a href="/contact.html" data-instant>Contact</a></li>
-          </ul>
-          
-          </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-        <div class="container" id="projectsContainer">
-          <div style="height:calc(100vh - 50px);background-color:;margin-top:-64px;width:100%;">
-            <div style="height:calc(47vh - 0px);width:100%;text-align: center;display:flex;align-items: center;justify-content:center;">
-              <div style=""><h1 id="title" style="margin-bottom:4vh;margin-top:0px;">Hey, I'm Benjamin.</h1>
-                <h1 id="title" style="margin-bottom:4vh;">I'm a designer and editor.</h1>
-              <h1 id="title" class="hideableText" style="margin-bottom:0vh;">I'm 18 years old and I live in California.</h1></div>
-            </div>
-            
-            <div style="inline-block;height:calc(53vh - 50px);background-image: url(images/me.png);background-size:contain;background-position:center bottom;background-repeat: no-repeat;">
-            </div>
-            
-          </div>
-          
-        </div>
-        <!--<script src="instantclick.min.js" data-no-instant></script>
-       <script data-no-instant>InstantClick.init();</script>-->
-      </body>
+      </div>
+    </div>
+  </div>
+  <svg id="waves" width="100%" viewBox="0 0 1024 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <path fill="#FFF"> <animate attributeName="d" dur="6500ms" repeatCount="indefinite" keyTimes="0; .5; 1" calcMode="spline"
+    keySplines="0.5,0.1,0.2,0.6;
+    0.5,0.1,0.2,0.6"
+    values="M0,110.082953 C0,110.082953 68.897878,119.25231 176.543803,123.302966 C227.498299,125.220355 287.134792,125.990833 352.255568,124.098999 C414.424517,122.292919 481.591829,118.060414 550.97522,110.082953 C613.88116,102.850247 671.435319,93.7105414 723.066662,83.8030346 C784.237051,72.0650865 837.093941,59.2494228 880.687724,47.2504941 C973.203715,21.7860189 1024,0 1024,0 L1024,260 L0,260 L0,110.082953 Z; M0,107.082953 C0,107.082953 68.897878,125.25231 176.543803,129.302966 C227.498299,131.220355 287.134792,120.990833 352.255568,119.098999 C414.424517,117.292919 481.591829,124.060414 550.97522,116.082953 C613.88116,108.850247 671.435319,87.7105414 723.066662,77.8030346 C784.237051,66.0650865 837.093941,66.2494228 880.687724,54.2504941 C973.203715,28.7860189 1024,0 1024,0 L1024,260 L0,260 L0,107.082953 Z; M0,110.082953 C0,110.082953 68.897878,119.25231 176.543803,123.302966 C227.498299,125.220355 287.134792,125.990833 352.255568,124.098999 C414.424517,122.292919 481.591829,118.060414 550.97522,110.082953 C613.88116,102.850247 671.435319,93.7105414 723.066662,83.8030346 C784.237051,72.0650865 837.093941,59.2494228 880.687724,47.2504941 C973.203715,21.7860189 1024,0 1024,0 L1024,260 L0,260 L0,110.082953 Z"/></path></svg>
+    <div class="container-fluid" id="lowerContent">
+      <div class="container">
+        <h3 style="margin-top:-8vw; margin-bottom:25px;line-height:30px;">Like you, I'm<br>on the Internet.</h3>
+        <a href="https://dribbble.com/bzweig"><div class="socialButton"><h3>Dribbble</h3></div></a>
+        <a href="https://github.com/benzweig"><div class="socialButton"><h3>GitHub</h3></div></a>
+        <a href="https://soundcloud.com/jaminzweig"><div class="socialButton"><h3>Soundcloud</h3></div></a>
+        <a href="https://twitter.com/ikeadrift"><div class="socialButton"><h3>Twitter</h3></div></a>
+        <a href="https://medium.com/@tfzweig/"><div class="socialButton"><h3>Medium</h3></div></a>
+        <a href="mailto:ben@hi-lite.co"><div style="margin-bottom: 20px;" class="socialButton"><h3>Good 'ol Email</h3></div></a>
+      </div></div>
+    </body>
     </html>
