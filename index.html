@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<!--
-Copyright (c) 2016 Benjamin Zweig
--->
 <html>
+
 <head>
-  <script src="https://code.jquery.com/jquery.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Benjamin T. F. Zweig</title>
-  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Projects</title>
+  <link href='https://fonts.googleapis.com/css?family=Lora|Nunito:400,700' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+
   @font-face {
       font-family: 'proxima_nova_soft';
       src: url('./fonts/proximanovasoft-medium-webfont.eot');
@@ -35,141 +32,164 @@ Copyright (c) 2016 Benjamin Zweig
       font-style: normal;
   }
 
-  @media (min-width: 992px) {
-    #waves{
-      margin-top:-16vw !important;
-    }
-  }
-
-  body{
-    margin: 0 0 0 0;
-    font-family: 'proxima_nova_soft';
-    font-weight: medium;
-    background-color: #FFF;
-    color:#00B5FF;
-  }
-
-  .header{
-    color: #FFF;
-    background-color: #00B5FF;
-  }
-
-  .header h1{
-    font-weight: bold;
-    margin-top:10px;
-    margin-bottom:26px;
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.0);
-  }
-
-  .header h3{
-    max-width:400px;margin-bottom:16px;
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.0);
-    line-height: 30px;
-  }
-
-  .icon{
-    height: 52px;
-    margin-top:40px;
-    margin-bottom:26px;
-    border-radius: 4px;
-  }
-
-  h3{
-    font-weight: 500;
-  }
-
-  #waves{
-    margin-top:-25vh;
-    pointer-events: none;
-    z-index: -10;
-  }
-
-  .projectButton{
-    background-color: white;
-    color:#00B5FF;
-    border-radius:7px;
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: -12px;
-    margin-right: 8px;
-    margin-top:20px;
-    z-index: 10;
+  body {
+    font-family: 'proxima_nova_soft', sans-serif;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #444;
+    margin:0;
+    background-color: #ECEFF4;
 
   }
 
-  .projectButton h3{
-    padding: 15px 15px 12px 14px;
-    margin: 0 0 0 0;
-    font-weight: bold;
-    text-shadow: none;
-    line-height: 24px;
+  .content{
+    margin: auto;
+    max-width: 640px;
+    padding: 0 24px 0 24px;
   }
 
-
-  .socialButton{
-    background-color: #00B5FF;
-    color:white;
-    border-radius:7px;
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: 12px;
-    margin-right: 8px;
+  .topWrapper{
+    color: white;
+    background-color: #0F033A;
+    width:100%;
   }
 
-
-  .socialButton h3{
-    padding: 8px 10px 7px 10px;
-    margin: 0 0 0 0;
-    font-weight: bold;
+  .topWrapper h1,h2,h3{
+    color: white;
   }
 
-  #copyright{
-    color:#90A4AE;
+  .topWrapper a{
+    color: white;
   }
 
-  col-md-4{
-    background-color:blue;
+  h1,h2,h3 {
+    line-height: 1.2;
+    color: #0F033A;
   }
-
-  .projectCell{
-    border-radius: 7px;
-    background-color: #ECEFF1;
-    width: 300px;
-    height: 200px;
-    margin-left: 20px;
-    margin-right: 20px;
+  a{
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    color: #0F033A;
+  }
+  a:hover{
+    border-bottom: 1px dotted;
+  }
+  .embed_container{
+    text-align: center;
+    margin: 46px 0 36px 0;
   }
   </style>
 </head>
-<body>
-  <div class="container-fluid" id="headerContainer" style="background-color:#00B5FF;padding-bottom:18vh;">
-    <div class="container">
-      <div class="header">
-        <img src="http://i.imgur.com/FdNY4d2.png" class="icon">
-        <div id="upperContent">
-          <h1 id="name">Benjamin T. F. Zweig</h1>
-          <h3 class="hidden-xs">Hey.&nbsp;I'm&nbsp;a&nbsp;designer&nbsp;and writer from&nbsp;California. I&nbsp;love&nbsp;to travel.<br><br>I'm fascinated by intersections of&nbsp;art,&nbsp;music,&nbsp;and&nbsp;technology.<br><br>Last updated: Winter 2016.</h3>
-          <h3 class="visible-xs">Hey.&nbsp;I'm&nbsp;a&nbsp;designer&nbsp;and writer from&nbsp;California. I&nbsp;love&nbsp;to travel.<br><br>I'm fascinated by intersections of&nbsp;art, music,&nbsp;and&nbsp;technology.<br><br>Last updated: Winter 2016.</h3>
 
-          <a href="http://portfolio.zweig.co"><div class="projectButton" style="margin-bottom:0px;"><h3>View Portfolio &nbsp;<span style="font-size:20px;">&#10140;</span></h3></div></a>
-          <a href="http://zweig.co/projects"><div class="projectButton"><h3>View Projects &nbsp;<span style="font-size:20px;">&#10140;</span></h3></div></a>
-        </div>
-      </div>
-    </div>
+<body id="top">
+  <div class="topWrapper">
+    <div class="content">
+  <header>
+    <img src="mark.png" style="width:30px;padding-top:80px;">
+    <h1 style="">Benjamin T. F. Zweig</h1>
+      <aside>
+        <p id="movedText" style="
+        margin-bottom:10px;
+        width:244px;
+        margin-left: -18px;
+        margin-top: 12px;">Hey. I'm a designer and editor<br>from California. I love to travel.</p>
+        <p style="margin-bottom:10px;">I'm fascinated by intersections<br>of art, music, and technology.</p>
+
+        <a href="#scrollTo" style="border-bottom:none;"><img src="down.png" style="width:30px;padding-top:26px;margin-left:-1px;"></a>
+
+        </aside>
+    </header>
   </div>
-  <svg id="waves" width="100%" viewBox="0 0 1024 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <path fill="#FFF"> <animate attributeName="d" dur="6500ms" repeatCount="indefinite" keyTimes="0; .5; 1" calcMode="spline"
-    keySplines="0.5,0.1,0.2,0.6;
-    0.5,0.1,0.2,0.6"
-    values="M0,110.082953 C0,110.082953 68.897878,119.25231 176.543803,123.302966 C227.498299,125.220355 287.134792,125.990833 352.255568,124.098999 C414.424517,122.292919 481.591829,118.060414 550.97522,110.082953 C613.88116,102.850247 671.435319,93.7105414 723.066662,83.8030346 C784.237051,72.0650865 837.093941,59.2494228 880.687724,47.2504941 C973.203715,21.7860189 1024,0 1024,0 L1024,260 L0,260 L0,110.082953 Z; M0,107.082953 C0,107.082953 68.897878,125.25231 176.543803,129.302966 C227.498299,131.220355 287.134792,120.990833 352.255568,119.098999 C414.424517,117.292919 481.591829,124.060414 550.97522,116.082953 C613.88116,108.850247 671.435319,87.7105414 723.066662,77.8030346 C784.237051,66.0650865 837.093941,66.2494228 880.687724,54.2504941 C973.203715,28.7860189 1024,0 1024,0 L1024,260 L0,260 L0,107.082953 Z; M0,110.082953 C0,110.082953 68.897878,119.25231 176.543803,123.302966 C227.498299,125.220355 287.134792,125.990833 352.255568,124.098999 C414.424517,122.292919 481.591829,118.060414 550.97522,110.082953 C613.88116,102.850247 671.435319,93.7105414 723.066662,83.8030346 C784.237051,72.0650865 837.093941,59.2494228 880.687724,47.2504941 C973.203715,21.7860189 1024,0 1024,0 L1024,260 L0,260 L0,110.082953 Z"/></path></svg>
-    <div class="container-fluid" id="lowerContent">
-      <div class="container">
-        <h3 style="margin-top:-8vw; margin-bottom:25px;line-height:30px;">Like you, I'm<br>on the Internet.</h3>
-        <a href="https://dribbble.com/bzweig"><div class="socialButton"><h3>Dribbble</h3></div></a>
-        <a href="https://github.com/benzweig"><div class="socialButton"><h3>GitHub</h3></div></a>
-        <a href="https://soundcloud.com/jaminzweig"><div class="socialButton"><h3>Soundcloud</h3></div></a>
-        <a href="https://twitter.com/ikeadrift"><div class="socialButton"><h3>Twitter</h3></div></a>
-        <a href="https://medium.com/@tfzweig/"><div class="socialButton"><h3>Medium</h3></div></a>
-        <a href="mailto:ben@hi-lite.co"><div style="margin-bottom: 20px;" class="socialButton"><h3>Good 'ol Email</h3></div></a>
-      </div></div>
-    </body>
-    </html>
+  <svg style="margin-bottom: -12px;margin-top:50px;" width="100%" viewBox="16482 865 1024 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g id="Group-2-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(16482.000000, 865.000000)">
+          <polygon id="Rectangle-9" fill="#19C1F3" points="1024 0 1024 210 0 210"></polygon>
+          <polygon id="Rectangle-10-Copy" fill="#ECEFF4" points="0 70 1024 210 1024 220 0 220 0 210"></polygon>
+      </g>
+  </svg>
+    </div>
+
+    <br>
+
+
+
+
+    <div id="scrollTo" class="content" style="padding-top:30px;">
+
+      <h1>Here are some projects.</h1>
+      <p style="margin-bottom:40px;">🎨&nbsp;&nbsp;Looking for my portfolio? <a href="http://portfolio.zweig.co/">That's here</a>.<br>
+        🛠&nbsp;&nbsp;All hackathon projects <a href="http://devpost.com/benzweig">on Devpost</a>.<br>
+        📃&nbsp;&nbsp;Want my resume? Cool! <a href="mailto:ben@hi-lite.co">Email me</a>.</p>
+    <h2 id="emp"><a href="https://chrome.google.com/webstore/detail/emp-⌘%2Benter-to-unsubscrib/ipohfmoaibjjpjkganncblhlhiobeghf?hl=en">EMP – Chrome Extension</a></h2>
+        <p>🔕&nbsp;&nbsp;<b>&#8984; + Enter to automatically unsubscribe.</b><br>When commenting on Facebook, I'm often giving feedback, answering a question, or making a terrible pun. Commenting automatically subscribes me to notifications of all further activity on a post, which is usually something I don't want. EMP is a simple chrome extension to elegantly solve this UX hiccup.</p>
+<br>
+<h2 id="js"><a href="http://zweig.co/jankyscroll/">Jankyscroll – JS "Plugin"</a></h2>
+      <p>😈&nbsp;&nbsp;<b>An easily-implemented terrible scrolling experience.</b><br>Since so many websites hijack scrolling anyways, I thought I'd save them some trouble with a handy plugin. Please don't ever use this, ever. Somehow, it was #1 on Hacker News.</p>
+<br>
+<h2 id="kickback"><a href="http://devpost.com/software/kickback">Kickback – LA Hacks 2015</a></h2>
+      <p>💸&nbsp;&nbsp;  <b>Effortless Amazon refunds when prices change.</b><br>Amazon has a policy stating that if a product's price falls within a week of your purchase, you're entitled to a refund of the difference. Claiming this refund is a hassle, but Kickback does all the legwork for you, passively saving you a ton.</p>
+<br>
+<h2 id="guardian"><a href="http://devpost.com/software/guardian-652ibf">Guardian – MHacks 6</a></h2>
+      <p>👼&nbsp;&nbsp;<b>Navigate out of unsafe or uncomfortable situations.</b><br>Guardian calls an Uber to a calculated location up ahead based on your pace and the car's ETA. As you're walking, Guardian will prompt you with haptic directions on your wrist to get you to your Uber, no oblivious map-staring required. An emergency contact is send your location when the app is triggered, and notified when you're safe &amp; sound.</p>
+<br>
+<h2 id="hamilton"><a href="http://devpost.com/software/hamilton-your-personal-finance-assistant">Hamilton – Battle of the Hacks</a></h2>
+      <p>💰&nbsp;&nbsp;<b>Your smart personal finance assistant.</b><br>Hamilton allows you to query all of your finance information through a dead-simple NLP chat interface. It's able to handle complex questions, and can help you gain greater insight into how you've been spending your money. Ask it about subscriptions, genres of purchase, or comparisons.</p>
+<br>
+<h2 id="tone"><a href="http://devpost.com/software/tone">Tone – Bitcamp 2015</a></h2>
+      <p>📬&nbsp;&nbsp;<b>Be your best self when writing emails.</b><br>
+      Over text, it can be easy to come off the wrong way. We wanted to solve this in an unobtrusive way, so you can sound as good over email as you do in live conversation. While writing an email, Tone analyzes your message in real time to let you know if you're sounding too self-centered or aggressive, or very open and agreeable. Tone provides a helpful 'language graph' at the top of your compose window, visually breaking down what you’ve written.</p>
+<br>
+
+          <hr>
+          <p style="display:inline;float:left;"><a href="http://zweig.co">Benjamin T. F. Zweig</a></p>
+          <p style="float:right;display:inline;"><a href="#top">Back to top</a></p>
+        </div>
+        <script>
+        function setVendor(element, property, value) {
+            element.style["webkit" + property] = value;
+            element.style["moz" + property] = value;
+            element.style["ms" + property] = value;
+            element.style["o" + property] = value;
+          }
+
+          setTimeout(function(){
+            var myElement = document.getElementById("movedText");
+            myElement.style.marginLeft = "-30px";
+            myElement.style.borderStyle = "solid";
+            myElement.style.borderWidth = "12px";
+            myElement.style.borderImage = "url(handle.png) 12";
+            myElement.style.marginTop = "-12px";
+            myElement.style.marginBottom = "-12px";
+            setVendor(myElement, "BorderImage", "url(handle.png) 12")
+
+            for(i=0; i<=9; i++){
+
+              (function(i) {
+                setTimeout(function(){
+                  var bumpAmount = -1 * (30-(i * 2));
+                  myElement.style.marginLeft = bumpAmount.toString() + "px";
+                }, (120 * i) + 300);
+              })(i);
+            }
+            setTimeout(function(){
+              myElement.style.marginLeft = "0";
+              myElement.style.borderStyle = "none";
+              myElement.style.borderWidth = "0";
+              myElement.style.borderImage = "none";
+              myElement.style.marginTop = "12px";
+              myElement.style.marginBottom = "12px";
+              setVendor(myElement, "BorderImage", "none")
+            }, (120 * i) + 400 + 300);
+
+          }, 1750);
+
+          /*border-style: solid;
+          border-width: 12px;
+          -moz-border-image: url(handle.png) 12;
+          -webkit-border-image: url(handle.png) 12;
+          -o-border-image: url(handle.png) 12;
+          border-image: url(handle.png) 12;*/
+        </script>
+        </body>
+        </html>
+
+        <!--<span style="font-size: 0.78em; color: white; background-color: #1E88E5; border-radius: 4px; padding: 3px 7px 3px 7px;">&beta; Deal</span>  <p>Not satisfied? No worries, I'm happy to refund you. Though you’ve gotta admit, it would be a bit weird if you did that and used my work anyways.</p>-->
