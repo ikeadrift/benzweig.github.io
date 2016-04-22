@@ -78,6 +78,73 @@
     text-align: center;
     margin: 46px 0 36px 0;
   }
+
+  /* Pulse */
+@-webkit-keyframes hover-float {
+  25% {
+    -webkit-transform: translateY(-3px);
+     transform: translateY(-3px);
+  }
+
+  75% {
+    -webkit-transform: translateY(3px);
+     transform: translateY(3px);
+  }
+}
+
+@keyframes hover-float {
+  0%, 100% {
+    -webkit-transform: translateY(-3px);
+     transform: translateY(-3px);
+  }
+
+  50% {
+    -webkit-transform: translateY(3px);
+     transform: translateY(3px);
+  }
+}
+
+.hover-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-animation-name: hover-float;
+  animation-name: hover-float;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+  animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.socialButton{
+  background-color: #00B5FF;
+  color:white;
+  border-radius:7px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 12px;
+  margin-right: 8px;
+}
+
+
+.socialButton h3{
+  padding: 8px 10px 7px 10px;
+  margin: 0 0 0 0;
+  font-weight: bold;
+}
+
+.socialButtonContainer{
+  margin-bottom: 80px;
+}
+
+.socialButtonContainer a,h3{
+  color: white;
+  border-bottom: none;
+}
   </style>
 </head>
 
@@ -85,22 +152,23 @@
   <div class="topWrapper">
     <div class="content">
   <header>
-    <img src="mark.png" style="width:30px;padding-top:80px;">
+    <img src="mark.png" style="width:30px;padding-top:110px;">
     <h1 style="">Benjamin T. F. Zweig</h1>
       <aside>
         <p id="movedText" style="
+        padding-left:4px;
         margin-bottom:10px;
         width:244px;
-        margin-left: -18px;
+        margin-left: -22px;
         margin-top: 12px;">Hey. I'm a designer and editor<br>from California. I love to travel.</p>
         <p style="margin-bottom:10px;">I'm fascinated by intersections<br>of art, music, and technology.</p>
 
-        <a href="#scrollTo" style="border-bottom:none;"><img src="down.png" style="width:30px;padding-top:26px;margin-left:-1px;"></a>
+        <a href="#scrollTo" class="hover-float" style="border-bottom:none;"><img src="down.png" style="width:30px;padding-top:26px;margin-left:-1px;"></a>
 
         </aside>
     </header>
   </div>
-  <svg style="margin-bottom: -12px;margin-top:50px;" width="100%" viewBox="16482 865 1024 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg style="margin-bottom: -12px;margin-top:20px;" width="100%" viewBox="16482 865 1024 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g id="Group-2-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(16482.000000, 865.000000)">
           <polygon id="Rectangle-9" fill="#19C1F3" points="1024 0 1024 210 0 210"></polygon>
           <polygon id="Rectangle-10-Copy" fill="#ECEFF4" points="0 70 1024 210 1024 220 0 220 0 210"></polygon>
@@ -114,11 +182,23 @@
 
 
     <div id="scrollTo" class="content" style="padding-top:30px;">
-
-      <h1>Here are some projects.</h1>
-      <p style="margin-bottom:40px;">🎨&nbsp;&nbsp;Looking for my portfolio? <a href="http://portfolio.zweig.co/">That's here</a>.<br>
+      <p style="margin-bottom:80px;">🎨&nbsp;&nbsp;Looking for my portfolio? <a href="http://portfolio.zweig.co/">That's here</a>.<br>
         🛠&nbsp;&nbsp;More hackathon projects: <a href="http://devpost.com/benzweig">Devpost</a>.<br>
         📃&nbsp;&nbsp;Want my resume? Cool! <a href="mailto:ben@hi-lite.co">Email me</a>.</p>
+
+      <h1>Like you, I'm on the Internet.</h1>
+      <div class="socialButtonContainer">
+      <a href="https://dribbble.com/bzweig"><div class="socialButton"><h3>Dribbble</h3></div></a>
+      <a href="https://github.com/benzweig"><div class="socialButton"><h3>GitHub</h3></div></a>
+      <a href="https://soundcloud.com/jaminzweig"><div class="socialButton"><h3>Soundcloud</h3></div></a>
+      <a href="https://twitter.com/ikeadrift"><div class="socialButton"><h3>Twitter</h3></div></a>
+      <a href="https://medium.com/@tfzweig/"><div class="socialButton"><h3>Medium</h3></div></a>
+      <a href="mailto:ben@hi-lite.co"><div style="margin-bottom: 20px;" class="socialButton"><h3>Good 'ol Email</h3></div></a>
+      </div>
+
+
+      <h1>Some side projects.</h1>
+
     <h2 id="emp"><a href="https://chrome.google.com/webstore/detail/emp-⌘%2Benter-to-unsubscrib/ipohfmoaibjjpjkganncblhlhiobeghf?hl=en">EMP – Chrome Extension</a></h2>
         <p>🔕&nbsp;&nbsp;<b>&#8984; + Enter to automatically unsubscribe.</b><br>When commenting on Facebook, I'm often giving feedback, answering a question, or making a terrible pun. Commenting automatically subscribes me to notifications of all further activity on a post, which is usually something I don't want. EMP is a simple chrome extension to elegantly solve this UX hiccup.</p>
 <br>
@@ -153,7 +233,7 @@
 
           setTimeout(function(){
             var myElement = document.getElementById("movedText");
-            myElement.style.marginLeft = "-30px";
+            myElement.style.marginLeft = "-34px";
             myElement.style.borderStyle = "solid";
             myElement.style.borderWidth = "12px";
             myElement.style.borderImage = "url(handle.png) 12";
@@ -165,13 +245,13 @@
 
               (function(i) {
                 setTimeout(function(){
-                  var bumpAmount = -1 * (30-(i * 2));
+                  var bumpAmount = -1 * (34-(i * 2));
                   myElement.style.marginLeft = bumpAmount.toString() + "px";
                 }, (120 * i) + 300);
               })(i);
             }
             setTimeout(function(){
-              myElement.style.marginLeft = "0";
+              myElement.style.marginLeft = "-4px";
               myElement.style.borderStyle = "none";
               myElement.style.borderWidth = "0";
               myElement.style.borderImage = "none";
