@@ -1,419 +1,612 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <meta property="og:title" content="Benjamin T. F. Zweig"/>
-    <meta property="og:url" content="http://zweig.co"/>
-    <meta property="og:image" content="ogimage.png"/>
-    <meta property="og:site_name" content="Benjamin T. F. Zweig"/>
-    <meta property="og:description"
-          content="The personal site of Benjamin T. F. Zweig."/>
-  <title>Benjamin T. F. Zweig</title>
-  <style type="text/css">
-  @font-face {
-    font-family: 'proxima_nova_soft';
-    src: url('./fonts/proximanovasoft-medium-webfont.eot');
-    src: url('./fonts/proximanovasoft-medium-webfont.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/proximanovasoft-medium-webfont.woff2') format('woff2'),
-    url('./fonts/proximanovasoft-medium-webfont.woff') format('woff'),
-    url('./fonts/proximanovasoft-medium-webfont.ttf') format('truetype'),
-    url('./fonts/proximanovasoft-medium-webfont.svg#proxima_nova_softmedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
+    <meta name="google-site-verification" content="vcqZ-aado4njq3dOuS1Jo4w_5h3xkMkMvEM3GTnhsxQ" />
+    <meta charset="utf-8" />
+    <title>Benjamin Zweig</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Summer 2018" />
+    <meta name="robots" content="NOODP, index, follow" />
+    <meta itemprop="name" content="Benjamin T. F. Zweig">
+    <meta itemprop="description" content="Summer 2018">
+    <meta itemprop="image" content="/_img/share.png">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ikeadrift">
+    <meta name="twitter:title" content="Benjamin T. F. Zweig">
+    <meta name="twitter:description" content="Summer 2018">
+    <meta name="twitter:creator" content="@ikeadrift">
+    <meta name="twitter:image:src" content="/_img/share.png">
+    <meta name="twitter:domain" content="ikeadrift.com">
+    <!-- Open Graph data (Facebook) -->
+    <meta property="og:title" content="Benjamin T. F. Zweig" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="www.ikeadrift.com/" />
+    <meta property="og:image" content="/_img/share.png" />
+    <meta property="og:description" content="Summer 2018" />
+    <!-- Apple Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png" />
+    <!-- Standard Icons -->
+    <link rel="icon" type="image/png" href="/_img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/_img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/_img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/_img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/_img/favicon/favicon-128.png" sizes="128x128" />
+    <!-- Microsoft Metadata -->
+    <meta name="application-name" content="Benjamin T. F. Zweig"/>
+    <meta name="msapplication-TileColor" content="#2017E2" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/img/favicon/mstile-310x310.png" />
+    
+    <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> -->
 
-  @font-face {
-    font-family: 'proxima_nova_soft';
-    src: url('./fonts/proximanovasoft-semibold-webfont.eot');
-    src: url('./fonts/proximanovasoft-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/proximanovasoft-semibold-webfont.woff2') format('woff2'),
-    url('./fonts/proximanovasoft-semibold-webfont.woff') format('woff'),
-    url('./fonts/proximanovasoft-semibold-webfont.ttf') format('truetype'),
-    url('./fonts/proximanovasoft-semibold-webfont.svg#proxima_nova_softsemibold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-  }
+    <!-- Chrome Theme Color -->
+    <meta name="theme-color" content="#2017E2">
 
-  body {
-    font-family: 'proxima_nova_soft', sans-serif;
-    line-height: 1.8;
-    font-size: 18px;
-    color: #3D3D45;
-    margin:0;
-    background-color: #ECEFF4;
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63840458-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  }
+      gtag('config', 'UA-63840458-3');
+    </script>
 
-  .content{
-    margin: auto;
-    max-width: 640px;
-    padding: 0 24px 0 24px;
-  }
 
-  .topWrapper{
-    color: white;
-    background-color: #0F033A;
-    width:100%;
-  }
+    <!-- <script type="text/javascript">
+        var currentTime = new Date().getHours();
+        if (7 <= currentTime && currentTime < 20) {
+            document.write('<link rel="stylesheet" type="text/css" href="/css/style.css" inline>');
+        } else {
+           document.write('<link rel="stylesheet" type="text/css" href="/css/style-dark.css" inline>');
+        }
+    </script>
 
-  .topWrapper h1,h2,h3{
-    color: white;
-  }
+    <noscript><link rel="stylesheet" type="text/css" href="/css/style.css" inline></noscript> -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" inline>
 
-  .topWrapper a{
-    color: white;
-  }
-
-  h1,h2,h3 {
-    line-height: 1.2;
-    color: #0F033A;
-  }
-  a{
-    text-decoration: none;
-    border-bottom: 1px dashed;
-    color: #0F033A;
-    font-weight: bold;
-  }
-  a:hover{
-    border-bottom: 1px dotted;
-  }
-
-  /* Pulse */
-  @-webkit-keyframes hover-float {
-    0%, 100% {
-      -webkit-transform: translateY(-3px);
-      transform: translateY(-3px);
-    }
-
-    50% {
-      -webkit-transform: translateY(3px);
-      transform: translateY(3px);
-    }
-  }
-
-  @keyframes hover-float {
-    0%, 100% {
-      -webkit-transform: translateY(-3px);
-      transform: translateY(-3px);
-    }
-
-    50% {
-      -webkit-transform: translateY(3px);
-      transform: translateY(3px);
-    }
-  }
-
-  .hover-float {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-animation-name: hover-float;
-    animation-name: hover-float;
-    -webkit-animation-duration: 2.5s;
-    animation-duration: 2.5s;
-    -webkit-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
-    animation-timing-function: cubic-bezier(.42, 0, .58, 1);
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-  }
-
-  .projects h2{
-    margin-bottom:-8px;
-  }
-
-  .projects p{
-    margin-bottom:40px;
-  }
-
-  .project img{
-    border-radius: 4px;
-    width: 30%;
-  }
-
-  </style>
 </head>
 
-<body id="top">
-  <div class="topWrapper">
-    <div style="height: 50px; width: 100%; background-color: rgba(0,0,0,0.5); display: flex; justify-content: center;  x">
-      <div class="content" style="background-color: transparent;">
-        <a href="http://ikeadrift.com">Hey! This site is pretty old. Here's a newer one. →</a>
-      </div>
-    </div>
+<body>
+
     <div class="content">
-      <div style="width:100%; height:300px; background-color: #0F033A;"></div>
-      <header style="margin-top:-150px;">
-        <h1>Benjamin Zweig</h1>
-        <aside>
-          <p id="movedText" style="
-          padding-left:4px;
-          margin-bottom:10px;
-          width:250px;
-          margin-left: -22px;
-          margin-top: 12px;">I'm a multidisciplinary designer<br>from California. I love to travel.</p>
-          <p style="margin-bottom:10px;">I'm fascinated by intersections<br>of art, music, and technology.</p>
 
-          <a href="#scrollTo" class="hover-float" style="border-bottom:none;"><img src="down.png" style="width:32px;margin-top:26px;margin-left:-1px;"></a>
-
-        </aside>
-      </header>
-    </div>
-    <svg style="margin-bottom: -12px;margin-top:20px;" width="100%" viewBox="16482 865 1024 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="divider" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(16482.000000, 865.000000)">
-        <polygon id="blue" fill="#19C1F3" points="1024 0 1024 210 0 210"></polygon>
-        <polygon id="grey" fill="#ECEFF4" points="0 70 1024 210 1024 220 0 220 0 210"></polygon>
-      </g>
-    </svg>
+  <header class="nav" id="header">
+  <div class="social-links-experiment">
+    
+      <p>Benjamin T. F. <s>Z</s>.</p>
+    
+    <p class="mobile-only"><a id="open-menu" onclick="openMenu()">Click Me</a></p>
+    <p class="mobile-hide"><a href="https://instagram.com/ikeadrift" target="_blank">Instagram</a></p>
+    <p class="mobile-hide"><a href="https://dribbble.com/bz" target="_blank">Dribbble</a></p>
+    <p class="mobile-hide"><a href="https://twitter.com/ikeadrift" target="_blank">Twitter</a></p>
+    <p class="mobile-hide"><a href="https://linkedin.com/in/benjaminzweig/" target="_blank">Linkedin</a></p>
+    <p class="mobile-hide"><a href="mailto:benjamin@ikeadrift.com">Email</a></p>
   </div>
+</header>
 
-  <br>
-
-
-
-  <div id="scrollTo" class="content" style="padding-top:30px;background-color: #ECEFF4;">
-
-    <div style="margin-bottom:100px;">
-      <img id="avatar" src="smaller.png" style="width:72px;">
-      <h1 style="margin-top:px;">I practice playful minimalism.</h1>
-
-      <p style="">
-        Experienced with user interface &amp; experience, visual design, interaction design, and prototyping. Experimenting with sound and motion.
-I enjoy being involved from ideation through execution.<br>
-        <br>
-        I work at <a href="http://twitch.tv" target="_blank" style="border-bottom:none;"><svg style="margin-bottom:-3px; fill: #6441A5" width="46px" role="img" version="1.1" viewBox="0 0 94 32" width="94px" x="0px" y="0px">
-        <title>Twitch</title>
-        <path clip-rule="evenodd" d="M88,5h-6V0h-9l-6,5h-5.5L59,7.5V5h-5V0H36v5H16l-5-5H0v22l5,5.25L14,32h6v-1.5l3,1.5h12l2-3l1,3h7v-3l3,3h8l0.5-3l2.5,3h10l3-3v3h4l3-3v3h7l7-6V10L88,5z M13,13H8v6h5v6H6l-4-4V2h6v5h5V13z M36,21.5L32.5,25H15V7h6v12h2V7h6v12h2V7h5V21.5z M44,25h-6V7h6V25z M44,5h-6V2h6V5z M57,13h-5v6h5v6h-7l-4-4V2h6v5h5V13z M72,13h-7v6h7v6h-9l-4-4V11l4-4h9V13z M91,25h-6V13h-5v12h-6V2h6v5h7l4,4V25z" fill-rule="evenodd"></path>
-      </svg></a>.
-      </p>
-
-</div>
-
-<div id="contact">
-  <h1>I'm on the Internet.</h1>
-  <p>If you'd like to see my resume (or talk about something else), cool!<br>Shoot me an <a href="mailto:benzilla@me.com">email</a>, and I'll get right back to you.</p>
-  <p style="padding-bottom:100px;">
-    🏀&nbsp;&nbsp;Follow my latest work on <a href="https://dribbble.com/bz/">Dribbble</a>.<br>
-    📸&nbsp;&nbsp;Is iPhone a "real" camera? <a href="https://www.instagram.com/ikeadrift/">Instagram</a>.<br>
-    🐥&nbsp;&nbsp;Tweet up a storm over at <a href="https://twitter.com/ikeadrift">@ikeadrift</a>.<br>
-    🖊&nbsp;&nbsp;Now and then, I'll write on <a href="https://medium.com/@tfzweig/">Medium</a>.<br>
-    💼&nbsp;&nbsp;Let's get professional on <a href="https://www.linkedin.com/in/benjaminzweig">LinkedIn</a>.
-  </p>
-</div>
-</div>
-
-
-<svg style="
-background-image: linear-gradient(-180deg, #ECEFF4 99%, #6441A4 99%, #6441A4 100%);margin-top: -24px;" width="100%" viewBox="19261 -1057 1024 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <polygon id="Rectangle-10-Copy-9" stroke="none" fill="#6441A4" fill-rule="evenodd" points="19261 -917 19261 -916 20285 -916 20285 -917 20285 -1057"></polygon>
-</svg>
-
-<div class="contentWrapper" style="width:100%; background-color: #6441A4;margin-top:-12px;">
-<div class="content project" id="twitch" style="padding-top:30px;padding-bottom:80px;">
-    <h1 style="color: white;">Twitch</h1>
-    <p style="margin-top: -26px; color: white;"><b>Product Design</b></p>
-    <p style="margin-bottom:24px; color: white;">I've been at Twitch since July 2016. My team builds chat, discovery, events, and clips. Designers work closely with PMs, and are responsible for implementing their projects on the frontend alongside engineers. As major products I’ve contributed to are released, I’ll highlight them here. Thus far: our left nav, chat &amp; user settings, and events.</p>
-
-    <a href="https://twitch.tv/led" style="border-bottom: 1px white dashed;"><h2 style="display: inline; color:white;">Watch me on Twitch&nbsp;</h2><svg style="display: inline;" width="18px" viewBox="16223 253 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Group-4-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(16239.000000, 269.000000) rotate(-90.000000) translate(-16239.000000, -269.000000) translate(16223.000000, 253.000000)">
-        <path d="M16,32 C24.836556,32 32,24.836556 32,16 C32,7.163444 24.836556,0 16,0 C7.163444,0 0,7.163444 0,16 C0,24.836556 7.163444,32 16,32 Z M16.0710678,18.4100037 L10.0606602,12.4393398 C9.47487373,11.8535534 8.52512627,11.8535534 7.93933983,12.4393398 C7.35355339,13.0251263 7.35355339,13.9748737 7.93933983,14.5606602 L15.0104076,21.631728 C15.5961941,22.2175144 16.5459415,22.2175144 17.131728,21.631728 L24.2027958,14.5606602 C24.7885822,13.9748737 24.7885822,13.0251263 24.2027958,12.4393398 C23.6170094,11.8535534 22.6672619,11.8535534 22.0814755,12.4393398 L16.0710678,18.4100037 Z" id="Combined-Shape" fill="white"></path>
-    </g>
-</svg></a>
-</div>
-</div>
-
-<svg style="
-background-image: linear-gradient(0deg, #ECEFF4 99%, #6441A4 99%, #6441A4 100%);margin-top: -24px;" width="100%" viewBox="19090 42 1024 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <polygon id="Rectangle-10-Copy-8" stroke="none" fill="#6441A4" fill-rule="evenodd" points="20114 183 19090 43 19090 42 20114 42 20114 43"></polygon>
-</svg>
-
-<div class="contentWrapper" style="width:100%; background-color: #ECEFF4;margin-top: -12px;">
-<div class="content project" id="hhdesign" style="padding-top:30px;padding-bottom:80px;">
-    <a href="./hhdesign"><h1>HH Design</h1></a>
-    <p style="margin-top: -26px;"><b>Group Admin</b></p>
-    <p style="margin-bottom:24px;">
-
-    I help run a community for diverse student designers and programmers of myriad backgrounds to converse and collaborate. It's called HH Design. If you’re so inclined, <a href="https://fb.com/groups/designxtech">join us</a> on Facebook. (Also: our curated community <a href="https://medium.com/hh-design">Medium collection</a>.) </p>
-    <div style="margin-bottom:18px;"><img src="./hhdesign/chen.gif" style="margin-right: 3%;" alt="" />
-    <img src="./hhdesign/image1.png" style="margin-right: 3%;" alt="" />
-    <img src="./hhdesign/image3.png" alt="" /></div>
-    <a href="./hhdesign"><h2 style="display: inline;">Continue reading&nbsp;</h2><svg style="display: inline;" width="18px" viewBox="16223 253 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Group-4-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(16239.000000, 269.000000) rotate(-90.000000) translate(-16239.000000, -269.000000) translate(16223.000000, 253.000000)">
-        <path d="M16,32 C24.836556,32 32,24.836556 32,16 C32,7.163444 24.836556,0 16,0 C7.163444,0 0,7.163444 0,16 C0,24.836556 7.163444,32 16,32 Z M16.0710678,18.4100037 L10.0606602,12.4393398 C9.47487373,11.8535534 8.52512627,11.8535534 7.93933983,12.4393398 C7.35355339,13.0251263 7.35355339,13.9748737 7.93933983,14.5606602 L15.0104076,21.631728 C15.5961941,22.2175144 16.5459415,22.2175144 17.131728,21.631728 L24.2027958,14.5606602 C24.7885822,13.9748737 24.7885822,13.0251263 24.2027958,12.4393398 C23.6170094,11.8535534 22.6672619,11.8535534 22.0814755,12.4393398 L16.0710678,18.4100037 Z" id="Combined-Shape" fill="#0F013B"></path>
-    </g>
-</svg></a>
-</div>
-</div>
-
-
-<svg style="background-color: #ECEFF4;margin-top: -24px;" width="100%" viewBox="840 216 1024 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <polygon id="Rectangle-10-Copy-5" stroke="none" fill="#FFFFFF" fill-rule="evenodd" transform="translate(1352.000000, 286.500000) scale(-1, 1) translate(-1352.000000, -286.500000) " points="840 216 1864 356 1864 357 840 357 840 356"></polygon>
-</svg>
-
-<div class="contentWrapper" style="width:100%; background-color: #FFF;margin-top:-12px;">
-<div class="content project" id="freelance" style="padding-top:30px;padding-bottom:80px;">
-    <h1>Freelance Work</h1>
-    <p style="margin-top: -26px;"><b>Hi-Lite Co.</b></p>
-    <p style="margin-bottom:24px;">I've worked on mobile and web design/development projects with clients ranging from early-stage startups to established community organizations. I've designed brands, websites, mobile applications, and some fly socks.</p>
-    <div style="margin-bottom:18px;"><img src="./lunar/image3.gif" style="margin-right: 3%;" alt="" />
-    <img src="./freelance/image2.png" style="margin-right: 3%;" alt="" />
-    <img src="./freelance/image3.png" alt="" /></div>
-    <a href="https://dribbble.com/bz"><h2 style="display: inline;">Dribbble portfolio&nbsp;</h2><svg style="display: inline;" width="18px" viewBox="16223 253 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Group-4-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(16239.000000, 269.000000) rotate(-90.000000) translate(-16239.000000, -269.000000) translate(16223.000000, 253.000000)">
-        <path d="M16,32 C24.836556,32 32,24.836556 32,16 C32,7.163444 24.836556,0 16,0 C7.163444,0 0,7.163444 0,16 C0,24.836556 7.163444,32 16,32 Z M16.0710678,18.4100037 L10.0606602,12.4393398 C9.47487373,11.8535534 8.52512627,11.8535534 7.93933983,12.4393398 C7.35355339,13.0251263 7.35355339,13.9748737 7.93933983,14.5606602 L15.0104076,21.631728 C15.5961941,22.2175144 16.5459415,22.2175144 17.131728,21.631728 L24.2027958,14.5606602 C24.7885822,13.9748737 24.7885822,13.0251263 24.2027958,12.4393398 C23.6170094,11.8535534 22.6672619,11.8535534 22.0814755,12.4393398 L16.0710678,18.4100037 Z" id="Combined-Shape" fill="#0F013B"></path>
-    </g>
-</svg></a>
-</div>
-</div>
-
-<svg style="
-background-image: linear-gradient(0deg, #FFE958 99%, #FFFFFF 99%, #FFFFFF 100%);margin-top: -24px;" width="100%" viewBox="19090 42 1024 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <polygon id="Rectangle-10-Copy-8" stroke="none" fill="#FFF" fill-rule="evenodd" points="20114 183 19090 43 19090 42 20114 42 20114 43"></polygon>
-</svg>
-
-<div class="contentWrapper" style="width:100%; background-color: #FFE958;margin-top:-12px;">
-<div class="content project" id="mhacks" style="padding-top:30px;padding-bottom:80px;">
-    <a href="./mhacks"><h1 style="">MHacks</h1></a>
-    <p style="margin-top: -26px;"><b>VP of Design</b></p>
-    <p style="margin-bottom:24px;">I rebranded the latest event from one of the largest and longest-running university hackathons, striving for a community-leading gender balance. I wrote haikus. Skills utilized: visual design, copywriting, web design, and UX.</p>
-    <div style="margin-bottom:18px;"><img src="./mhacks/image1.gif" style="margin-right: 3%;" alt="" />
-    <img src="./mhacks/image2.gif" style="margin-right: 3%;" alt="" />
-    <img src="./mhacks/image3.png" alt="" /></div>
-    <a href="./mhacks"><h2 style="display: inline;">Tell me more&nbsp;</h2><svg style="display: inline;" width="18px" viewBox="16223 253 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Group-4-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(16239.000000, 269.000000) rotate(-90.000000) translate(-16239.000000, -269.000000) translate(16223.000000, 253.000000)">
-        <path d="M16,32 C24.836556,32 32,24.836556 32,16 C32,7.163444 24.836556,0 16,0 C7.163444,0 0,7.163444 0,16 C0,24.836556 7.163444,32 16,32 Z M16.0710678,18.4100037 L10.0606602,12.4393398 C9.47487373,11.8535534 8.52512627,11.8535534 7.93933983,12.4393398 C7.35355339,13.0251263 7.35355339,13.9748737 7.93933983,14.5606602 L15.0104076,21.631728 C15.5961941,22.2175144 16.5459415,22.2175144 17.131728,21.631728 L24.2027958,14.5606602 C24.7885822,13.9748737 24.7885822,13.0251263 24.2027958,12.4393398 C23.6170094,11.8535534 22.6672619,11.8535534 22.0814755,12.4393398 L16.0710678,18.4100037 Z" id="Combined-Shape" fill="#0F013B"></path>
-    </g>
-</svg></a>
-</div>
-</div>
-
-<svg style="/* Rectangle 83: */
-background-image: linear-gradient(0deg, #FFF 99%, #FFE958 99%, #FFE958 100%);margin-top: -24px;" width="100%"  viewBox="20300 -404 1024 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <polygon id="Rectangle-10-Copy-11" stroke="none" fill="#FFE958" fill-rule="evenodd" points="20300 -263 21324 -403 21324 -404 20300 -404 20300 -403 20300 -263"></polygon>
-</svg>
-
-
-<div class="contentWrapper" style="width:100%; background-color: #FFF;margin-top:-12px;">
-<div class="content project" id="hackathon" style="padding-top:30px;padding-bottom:80px;">
-    <a href="./hackathon"><h1>Hackathon Projects</h1></a>
-    <p style="margin-bottom:24px;">Thirty-six-hour events are a great way to explore an idea, as you rapidly bring a project from rough concept to MVP. Some of my favorite outcomes include a smart mesh network messenger, an NLP finance assistant, a cash-saving amazon bot, and an attitude-sensing email proofreader.</p>
-    <div style="margin-bottom:18px;"><img src="./hackathon/image1.png" style="margin-right: 3%;" alt="" />
-    <img src="./hackathon/image2.png" style="margin-right: 3%;" alt="" />
-    <img src="./hackathon/image3.png" alt="" /></div>
-    <a href="./hackathon"><h2 style="display: inline;">See more&nbsp;</h2><svg style="display: inline;" width="18px" viewBox="16223 253 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Group-4-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(16239.000000, 269.000000) rotate(-90.000000) translate(-16239.000000, -269.000000) translate(16223.000000, 253.000000)">
-        <path d="M16,32 C24.836556,32 32,24.836556 32,16 C32,7.163444 24.836556,0 16,0 C7.163444,0 0,7.163444 0,16 C0,24.836556 7.163444,32 16,32 Z M16.0710678,18.4100037 L10.0606602,12.4393398 C9.47487373,11.8535534 8.52512627,11.8535534 7.93933983,12.4393398 C7.35355339,13.0251263 7.35355339,13.9748737 7.93933983,14.5606602 L15.0104076,21.631728 C15.5961941,22.2175144 16.5459415,22.2175144 17.131728,21.631728 L24.2027958,14.5606602 C24.7885822,13.9748737 24.7885822,13.0251263 24.2027958,12.4393398 C23.6170094,11.8535534 22.6672619,11.8535534 22.0814755,12.4393398 L16.0710678,18.4100037 Z" id="Combined-Shape" fill="#0F013B"></path>
-    </g>
-</svg></a>
-</div>
-</div>
-
-
-
-<svg style="background-color: #FFF;margin-top: -24px;" width="100%" viewBox="1230 790 1024 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <polygon id="Rectangle-10-Copy-6" stroke="none" fill="#ECEFF4" fill-rule="evenodd" points="1230 790 2254 930 2254 931 1230 931 1230 930"></polygon>
-</svg>
-<div class="contentWrapper" style="width:100%; background-color: #ECEFF4;margin-top:-12px;">
-<div class="content" style="padding-top:30px; background-color: #ECEFF4;">
-
-
-
-      <div class="projects" id="projects" style="margin-bottom: 100px;">
-        <h1>Other projects.</h1>
-        <p>If I like it and it wasn't made at a hackathon, it'll be here.</p>
-        <h2 id="js"><a href="https://dribbble.com/bz/">Dribbble Portfolio</a></h2>
-        <p>A collection of visual design work.</p>
-        <h2 id="js"><a href="http://zweig.co/jankyscroll/">Jankyscroll – JS "Plugin"</a></h2>
-        <p><b>A terrible scrolling experience.</b><br>Since so many websites hijack scrolling, I thought I'd save them some trouble with a handy plugin. Please don't use this, ever. Somehow, it was #1 on Hacker News.</p>
-        <h2 id="settl"><a href="https://youtu.be/AQPF_mcLKgo">Settl – Comedy Hack Day</a></h2>
-        <p><b>Winner of "Funniest Hack."</b><br>Made in under 36 hours with <a href="mattgcondon">Matt Condon</a> at CHD Los Angeles 2015, Settl is a dating app for the real millennial generation. No matter how many times I do it, getting onstage doesn't feel any less nerve-wracking.</p>
-        <h2 id="emp"><a href="https://chrome.google.com/webstore/detail/emp-⌘%2Benter-to-unsubscrib/ipohfmoaibjjpjkganncblhlhiobeghf?hl=en">EMP – Chrome Extension</a></h2>
-        <p><b>&#8984; + Enter to unsubscribe.</b><br>When commenting on Facebook, I'm often giving feedback, answering a question, or making a terrible pun. Commenting automatically subscribes me to notifications of all further activity on a post, which is usually something I don't want. EMP is a simple chrome extension to elegantly solve this UX hiccup.</p>
-        </div>
-        <img src="colors.svg" style="height:16px;">
-        <hr>
-        <p style="float:left;display:inline;"><a href="#top">Back to top</a></p>
-        <p style="display:inline;float:right;">© Benjamin T. F. Zweig</p>
-      </div>
+<div class="contact-overlay mobile-only hidden" id="contact-overlay">
+  <div class="contact-overlay__content">
+    <div class="contact-overlay__header">
+      <p><a onclick="closeMenu()" id="close-menu">Close</a></p>
+      <p>Thanks</p>
     </div>
-      <script type="text/javascript">
-      function setVendor(element, property, value) {
-        element.style["-webkit" + property] = value;
-        element.style["-moz" + property] = value;
-        element.style["-ms" + property] = value;
-        element.style["-o" + property] = value;
+    <h1><a href="mailto:benjamin@ikeadrift.com" target="_blank">Benjamin <span class="contact-overlay__detail">@ikeadrift.com</span></a></h1>
+    <h1><a href="https://instagram.com/ikeadrift" target="_blank">Instagram <span class="contact-overlay__detail">.com/ikeadrift</span></a></h1>
+    <h1><a href="https://dribbble.com/bz" target="_blank">Dribbble <span class="contact-overlay__detail">.com/bz</span></a></h1>
+    <h1><a href="https://twitter.com/ikeadrift" target="_blank">Twitter <span class="contact-overlay__detail">.com/ikeadrift</span></a></h1>
+    <h1><a href="https://linkedin.com/in/benjaminzweig/" target="_blank">LinkedIn <span class="contact-overlay__detail">.com/benjaminzweig</span></a></h1>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var overlay = document.getElementById('contact-overlay');
+
+  overlay.ontouchmove = e => {
+    e.preventDefault();
+  };
+
+  function openMenu(){
+    overlay.classList.remove('hidden');
+    document.body.classList.add('noscroll');
+  }
+
+  function closeMenu(){
+    overlay.classList.add('hidden');
+    document.body.classList.remove('noscroll');
+  }
+</script>
+
+  <section>
+  <section class="drum-machine__section">
+<!--   <div class="helper-text mobile-hide">
+    <h2 class="">Press keys, sound on.</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path d="M1,7 L1,9 L3,9 L3,7 L1,7 Z M0,6 L4,6 L4,10 L0,10 L0,6 Z M7,7 L7,9 L9,9 L9,7 L7,7 Z M6,6 L10,6 L10,10 L6,10 L6,6 Z M13,7 L13,9 L15,9 L15,7 L13,7 Z M12,6 L16,6 L16,10 L12,10 L12,6 Z M4,1 L4,3 L6,3 L6,1 L4,1 Z M3,0 L7,0 L7,4 L3,4 L3,0 Z M2,13 L2,15 L14,15 L14,13 L2,13 Z M1,12 L15,12 L15,16 L1,16 L1,12 Z M10,1 L10,3 L12,3 L12,1 L10,1 Z M9,0 L13,0 L13,4 L9,4 L9,0 Z"/>
+</svg>
+
+  </div> -->
+  <div class="drum-machine__wrapper">
+    <div class="drum-machine__item drum-machine__item--kick">
+      <svg class="drum-machine__item-glyph" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M18,17.4648712 L18,21.747965 C21.4504544,20.8598794 24,17.7276789 24,14 C24,9.581722 20.418278,6 16,6 C11.581722,6 8,9.581722 8,14 C8,17.7276789 10.5495456,20.8598794 14,21.747965 L14,17.4648712 C12.8043973,16.7732524 12,15.4805647 12,14 C12,11.790861 13.790861,10 16,10 C18.209139,10 20,11.790861 20,14 C20,15.4805647 19.1956027,16.7732524 18,17.4648712 Z M14,25.8340831 C8.32457332,24.8819269 4,19.9459926 4,14 C4,7.372583 9.372583,2 16,2 C22.627417,2 28,7.372583 28,14 C28,19.9459926 23.6754267,24.8819269 18,25.8340831 L18,30 L14,30 L14,25.8340831 Z"/>
+</svg>
+
+      <div class="drum-machine__item-key" id="key_kick">Q</div>
+    </div>
+    <div class="drum-machine__item drum-machine__item--snare">
+      <svg class="drum-machine__item-glyph" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M24,14.6303214 C21.8636441,15.524628 19.0484987,16 16,16 C12.9515013,16 10.1363559,15.524628 8,14.6303214 L8,22 C8,22.0382393 8.48478296,22.4967015 9.67171354,22.9714737 C11.2829496,23.6159682 13.5528327,24 16,24 C18.4471673,24 20.7170504,23.6159682 22.3282865,22.9714737 C23.515217,22.4967015 24,22.0382393 24,22 L24,14.6303214 Z M28,10 L28,22 C28,25.8145602 22.5364006,28 16,28 C9.46359943,28 4,25.8145602 4,22 L4,10 C4,6.18543977 9.46359943,4 16,4 C22.5364006,4 28,6.18543977 28,10 Z M16,12 C18.4471673,12 20.7170504,11.6159682 22.3282865,10.9714737 C23.515217,10.4967015 24,10.0382393 24,10 C24,9.96176075 23.515217,9.50329849 22.3282865,9.02852626 C20.7170504,8.38403184 18.4471673,8 16,8 C13.5528327,8 11.2829496,8.38403184 9.67171354,9.02852626 C8.48478296,9.50329849 8,9.96176075 8,10 C8,10.0382393 8.48478296,10.4967015 9.67171354,10.9714737 C11.2829496,11.6159682 13.5528327,12 16,12 Z"/>
+</svg>
+
+      <div class="drum-machine__item-key" id="key_snare">W</div>
+    </div>
+    <div class="drum-machine__item drum-machine__item--clap">
+      <svg class="drum-machine__item-glyph" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M8,16 L4,4 L16,8 L28,4 L24,16 L28,28 L16,24 L4,28 L8,16 Z M12.2163702,16 L10.3245553,21.6754447 L16,19.7836298 L21.6754447,21.6754447 L19.7836298,16 L21.6754447,10.3245553 L16,12.2163702 L10.3245553,10.3245553 L12.2163702,16 Z"/>
+</svg>
+
+      <div class="drum-machine__item-key" id="key_clap">E</div>
+    </div>
+    <div class="drum-machine__item drum-machine__item--closed">
+      <svg class="drum-machine__item-glyph" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M14,19.9517457 C7.21912647,19.6184665 2,17.5654499 2,14 C2,10.4345501 7.21912647,8.38153354 14,8.04825431 L14,4 L18,4 L18,8.04825431 C24.7808735,8.38153354 30,10.4345501 30,14 C30,17.5654499 24.7808735,19.6184665 18,19.9517457 L18,28 L14,28 L14,19.9517457 Z M14,12.0587396 C11.7527401,12.192216 9.7108903,12.5477008 8.14717416,13.0689395 C7.26842545,13.3618557 6.59965908,13.6897608 6.19869512,14 C6.59965908,14.3102392 7.26842545,14.6381443 8.14717416,14.9310605 C10.1643036,15.603437 12.9770443,16 16,16 C19.0229557,16 21.8356964,15.603437 23.8528258,14.9310605 C24.7315746,14.6381443 25.4003409,14.3102392 25.8013049,14 C25.4003409,13.6897608 24.7315746,13.3618557 23.8528258,13.0689395 C22.2891097,12.5477008 20.2472599,12.192216 18,12.0587396 L18,14 L14,14 L14,12.0587396 Z"/>
+</svg>
+
+      <div class="drum-machine__item-key" id="key_closed">R</div>
+    </div>
+    <div class="drum-machine__item drum-machine__item--open">
+      <svg class="drum-machine__item-glyph" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path fill-rule="evenodd" d="M14,23.9517457 C7.21912647,23.6184665 2,21.5654499 2,18 C2,16.8365578 2.55572351,15.8341569 3.54009513,15 C2.55572351,14.1658431 2,13.1634422 2,12 C2,8.43455014 7.21912647,6.38153354 14,6.04825431 L14,4 L18,4 L18,6.04825431 C24.7808735,6.38153354 30,8.43455014 30,12 C30,13.1634422 29.4442765,14.1658431 28.4599049,15 C29.4442765,15.8341569 30,16.8365578 30,18 C30,21.5654499 24.7808735,23.6184665 18,23.9517457 L18,28 L14,28 L14,23.9517457 Z M14,10.0587396 C11.7527401,10.192216 9.7108903,10.5477008 8.14717416,11.0689395 C7.26842545,11.3618557 6.59965908,11.6897608 6.19869512,12 C6.59965908,12.3102392 7.26842545,12.6381443 8.14717416,12.9310605 C10.1643036,13.603437 12.9770443,14 16,14 C19.0229557,14 21.8356964,13.603437 23.8528258,12.9310605 C24.7315746,12.6381443 25.4003409,12.3102392 25.8013049,12 C25.4003409,11.6897608 24.7315746,11.3618557 23.8528258,11.0689395 C22.2891097,10.5477008 20.2472599,10.192216 18,10.0587396 L18,12 L14,12 L14,10.0587396 Z M8.05324573,17.1006542 C7.22070139,17.3854022 6.58524873,17.7009106 6.19869512,18 C6.59965908,18.3102392 7.26842545,18.6381443 8.14717416,18.9310605 C10.1643036,19.603437 12.9770443,20 16,20 C19.0229557,20 21.8356964,19.603437 23.8528258,18.9310605 C24.7315746,18.6381443 25.4003409,18.3102392 25.8013049,18 C25.4147513,17.7009106 24.7792986,17.3854022 23.9467543,17.1006542 C21.6886126,17.6951493 18.9502684,18 16,18 C13.0497316,18 10.3113874,17.6951493 8.05324573,17.1006542 Z"/>
+</svg>
+
+      <div class="drum-machine__item-key" id="key_open">T</div>
+    </div>
+    <div class="drum-machine__item drum-machine__item--cymbal">
+      <svg class="drum-machine__item-glyph" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M18,11.1715729 L24.5857864,4.58578644 L27.4142136,7.41421356 L20.8284271,14 L26,14 L26,18 L20.8284271,18 L27.4142136,24.5857864 L24.5857864,27.4142136 L18,20.8284271 L18,26 L14,26 L14,20.8284271 L7.41421356,27.4142136 L4.58578644,24.5857864 L11.1715729,18 L6,18 L6,14 L11.1715729,14 L4.58578644,7.41421356 L7.41421356,4.58578644 L14,11.1715729 L14,6 L18,6 L18,11.1715729 Z M14,14 L14,18 L18,18 L18,14 L14,14 Z"/>
+</svg>
+
+      <div class="drum-machine__item-key" id="key_cymbal">Y</div>
+    </div>
+    <div class="drum-machine__item drum-machine__item--cowbell mobile-hide hidden">
+      <svg class="drum-machine__item-glyph" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="glow" fill-rule="nonzero" d="M19.8768944,12 L18.8768944,8 L13.1231056,8 L12.1231056,12 L19.8768944,12 Z M20.8768944,16 L11.1231056,16 L9.12310563,24 L22.8768944,24 L20.8768944,16 Z M22,4 L28,28 L4,28 L10,4 L22,4 Z"/>
+</svg>
+
+      <div class="drum-machine__item-key" id="key_cowbell">U</div>
+    </div>
+    <script src="_scripts/howler.core.min.js"></script>
+    <script>
+
+      var instruments = ['kick', 'snare', 'clap', 'open', 'closed', 'cymbal', 'cowbell'];
+      var sounds = {};
+      instruments.forEach(instrument => {
+        sounds[instrument] = new Howl({src: ['sounds/' + instrument + '.wav']})
+      });
+
+      function mouseHandler(inputSound) {
+        inputSound.querySelector(".drum-machine__item-key").classList.remove('sound-played');
+        inputSound.querySelector(".drum-machine__item-glyph").classList.remove('sound-played-glyph');
+        setTimeout(function(){
+          inputSound.querySelector(".drum-machine__item-key").classList.add('sound-played');
+          inputSound.querySelector(".drum-machine__item-glyph").classList.add('sound-played-glyph');
+        }, 0.5);
       }
 
-      setTimeout(function(){
-        var myElement = document.getElementById("movedText");
-        myElement.style.marginLeft = "-34px";
-        myElement.style.borderStyle = "solid";
-        myElement.style.borderWidth = "12px";
-        myElement.style.borderImage = "url(handle.png) 12";
-        myElement.style.marginTop = "-12px";
-        myElement.style.marginBottom = "-12px";
-        setVendor(myElement, "BorderImage", "url(handle.png) 12")
+      instruments.forEach(instrument => {
+        var domElement = document.querySelector(".drum-machine__item--" + instrument);
+        domElement.ontouchstart = e => {
+          sounds[instrument].play();
+          domElement.classList.add('drum-machine__item--touched');
+        };
 
-        for(i=0; i<=9; i++){
+        domElement.ontouchend = e => {
+          e.preventDefault();
+          domElement.classList.remove('drum-machine__item--touched');
+        };
 
-          (function(i) {
-            setTimeout(function(){
-              var bumpAmount = -1 * (34-(i * 2));
-              myElement.style.marginLeft = bumpAmount.toString() + "px";
-            }, (120 * i) + 350);
-          })(i);
+        document.querySelector(".drum-machine__item--" + instrument).ontouchstart = function() {
+          sounds[instrument].play();
+          domElement.classList.add('drum-machine__item--touched');
+          event.preventDefault();
+        };
+
+        document.querySelector(".drum-machine__item--" + instrument).onmousedown = function() {
+          mouseHandler(this);
+          console.log(this);
+          sounds[instrument].play();
+        };
+      })
+      
+      document.querySelector(".drum-machine__section").ontouchend = function() {
+        event.preventDefault();
+      };
+
+      document.onkeydown = function (e) {
+        e = e || window.event;
+        //clearTimeout(helperTimer);
+        // document.querySelector('.helper-text').classList.remove('helper-text--animated');
+        function keyHandler(inputSound) {
+          // inputSound.classList.remove('sound-played');
+          inputSound.querySelector(".drum-machine__item-key").classList.remove('sound-played');
+          inputSound.querySelector(".drum-machine__item-glyph").classList.remove('sound-played-glyph');
+          setTimeout(function(){
+            // inputSound.classList.add('sound-played');
+            inputSound.querySelector(".drum-machine__item-key").classList.add('sound-played');
+            inputSound.querySelector(".drum-machine__item-glyph").classList.add('sound-played-glyph');
+          }, 0.5);
         }
-        setTimeout(function(){
-          myElement.style.marginLeft = "-4px";
-          myElement.style.borderStyle = "none";
-          myElement.style.borderWidth = "0";
-          myElement.style.borderImage = "none";
-          myElement.style.marginTop = "12px";
-          myElement.style.marginBottom = "12px";
-          setVendor(myElement, "BorderImage", "none")
-        }, (120 * i) + 400 + 350);
 
-      }, 1150);
-      </script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-      <script>
-      $( document ).ready(function() {
-        $(function() {
-          $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html, body').animate({
-                  scrollTop: target.offset().top
-                }, 1000);
-                return false;
-              }
+        // A
+        if(e.keyCode == "81"){
+          sounds['kick'].play();
+          keyHandler(document.getElementsByClassName("drum-machine__item--kick")[0]);
+        }
+        // S
+        if(e.keyCode == "87"){
+          sounds['snare'].play();
+          //keyHandler(key_snare);
+          keyHandler(document.getElementsByClassName("drum-machine__item--snare")[0]);
+        }
+        // D
+        if(e.keyCode == "69"){
+          sounds['clap'].play();
+          //keyHandler(key_clap);
+          keyHandler(document.getElementsByClassName("drum-machine__item--clap")[0]);
+        }
+        // F
+        if(e.keyCode == "82"){
+          sounds['closed'].play();
+          // keyHandler(key_closed);
+          keyHandler(document.getElementsByClassName("drum-machine__item--closed")[0]);
+        }
+        // G
+        if(e.keyCode == "84"){
+          sounds['open'].play();
+          // keyHandler(key_open);
+          keyHandler(document.getElementsByClassName("drum-machine__item--open")[0]);
+        }
+        // H
+        if(e.keyCode == "89"){
+          sounds['cymbal'].play();
+          // keyHandler(key_cymbal);
+          keyHandler(document.getElementsByClassName("drum-machine__item--cymbal")[0]);
+        }
+        // J
+        if(e.keyCode == "85"){
+          document.querySelector(".drum-machine__item--cowbell").classList.remove('hidden');
+          //document.querySelector(".drum-machine__item--cowbell").classList.add("drum-intro");
+          sounds['cowbell'].play();
+          // keyHandler(key_cowbell);
+          keyHandler(document.getElementsByClassName("drum-machine__item--cowbell")[0]);
+        }
+      };
+
+      var urlParams = new URLSearchParams(window.location.search);
+      var drums = document.getElementsByClassName("drum-machine__item");
+
+
+      if (!urlParams.has('back')) {
+        var helperTimer = setTimeout( function() {
+          // document.querySelector('.helper-text').classList.add('helper-text--animated');
+        }, 2275);
+        for (var i = 0; i < drums.length - 1; i++) {
+          let j = i;
+          drums[j].style.opacity = 0;
+          if (j == 5) {
+            drums[j].classList.add("drum-intro-2");
+          } else {
+            drums[j].classList.add("drum-intro");
+          }
+        }
+
+        setTimeout( function() {
+          for (var i = 0; i < drums.length; i++) {
+            let j = i;
+            drums[j].style.opacity = 1;
+            drums[j].classList.remove("drum-intro");
+            if (j==5) {
+              setTimeout( function() {
+                drums[j].classList.remove("drum-intro-2");
+              }, 210);
             }
-          });
-        });
+          }
+        }, 351+(72*(drums.length+1)));
+      }
 
-        function blinkingAnimation() {
-          setTimeout(function (){
-            $("#avatar").attr("src", "blink.png");
+      // ((((2**((i+2)*.4))/3)-.3333333)*400)+300)
+    </script>
+  </div>
+</section>
+
+  <section class="heading">
+  <h1 style="margin-left: -1px">Product Designer building <a href='https://messenger.com/' target='_blank'>Messenger</a> at <a href='https://facebook.design/' target='_blank'>Facebook</a>. Absorbed by the union of art, music, and technology.</h1>
+</section>
+</section>
+
+<div id="featured">
+  <section class="post-list post-list--featured">
+  <h2 style="margin-bottom: 0.5rem">Featured</h2>
+  <div class="card-wrapper">
+    
+    
+      
+      
+
+      <a href="/twitch/"  class="post-card">
+
+        <div class="post-card-image post-card-image-">
+          <img src="/_img/twitch/thumb.jpg" draggable="false">
+        </div>
+
+        <div class="post-info-wrapper">
+          <div class="post-info post-info-">
+            <p class="post-title">Twitch</p>
+            
+              <h4 class="post-metadata">2016–2018</h4>
+            
+          </div>
+        </div>
+
+      </a>
+      
+      
+    
+      
+      
+
+      <a href="https://open.spotify.com/user/benzweig/playlist/2VPNDJlu0RBrp734hK7fyq" target='_blank' class="post-card">
+
+        <div class="post-card-image post-card-image-">
+          <img src="/_img/favorite-albums-2017/thumb.png" draggable="false">
+        </div>
+
+        <div class="post-info-wrapper">
+          <div class="post-info post-info-">
+            <p class="post-title">Favorite Tunes<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.2928932,4.29289322 L10,4 L8,2 L14,2 L14,4 L14,8 L13,7 L11.7071068,5.70710678 L7.87867966,9.53553391 L6.46446609,8.12132034 L10.2928932,4.29289322 Z M12,10 L14,10 L14,14 L2,14 L2,2 L6,2 L6,4 L4,4 L4,12 L12,12 L12,10 Z"/>
+</svg>
+</p>
+            
+              <h4 class="post-metadata">2017</h4>
+            
+          </div>
+        </div>
+
+      </a>
+      
+      
+    
+      
+      
+
+      <a href="/hh-design/"  class="post-card">
+
+        <div class="post-card-image post-card-image-">
+          <img src="/_img/hh-design/thumb.gif" draggable="false">
+        </div>
+
+        <div class="post-info-wrapper">
+          <div class="post-info post-info-">
+            <p class="post-title">HH Design</p>
+            
+              <h4 class="post-metadata">2015–Now</h4>
+            
+          </div>
+        </div>
+
+      </a>
+      
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</section>
+</div>
+
+<section class="article-body">
+  <h2 style="margin-bottom: 0.5rem">About Me</h2>
+
+  <p>If I could take pictures of one thing for the rest of my life, it'd be construction sites.</p>
+
+  <p>I'm a multidisciplinary designer with keen product intuition and manifold execution skills: interaction/visual design, copywriting, and high-fidelity prototyping. Experienced leveraging and extending design systems.</p>
+
+  <p>Those I work with have mentioned my:</p>
+
+  <ul>
+    <li>Attention to detail and appreciation for consistency.</li>
+    <li>Ability to engage in both micro and macro-level product thinking, and to smoothly transition between the two.</li>
+    <li>Taste in decorative desk plants.</li>
+  </ul>
+
+</section>
+ 
+<div id="experiments">
+  <section class="post-list post-list--">
+  <h2 style="margin-bottom: 0.5rem">Experiments</h2>
+  <div class="card-wrapper">
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+
+      <a href="http://zweig.co/jankyscroll/" target='_blank' class="post-card">
+
+        <div class="post-card-image post-card-image-">
+          <img src="/_img/jankyscroll/thumb.jpg" draggable="false">
+        </div>
+
+        <div class="post-info-wrapper">
+          <div class="post-info post-info-">
+            <p class="post-title">Jankyscroll<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.2928932,4.29289322 L10,4 L8,2 L14,2 L14,4 L14,8 L13,7 L11.7071068,5.70710678 L7.87867966,9.53553391 L6.46446609,8.12132034 L10.2928932,4.29289322 Z M12,10 L14,10 L14,14 L2,14 L2,2 L6,2 L6,4 L4,4 L4,12 L12,12 L12,10 Z"/>
+</svg>
+</p>
+            
+              <h4 class="post-metadata">#1 Hacker News</h4>
+            
+          </div>
+        </div>
+
+      </a>
+      
+      
+    
+      
+      
+
+      <a href="https://itunes.apple.com/us/app/askey/id950935054?mt=8" target='_blank' class="post-card">
+
+        <div class="post-card-image post-card-image-">
+          <img src="/_img/askey/thumb.jpg" draggable="false">
+        </div>
+
+        <div class="post-info-wrapper">
+          <div class="post-info post-info-">
+            <p class="post-title">Askey<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.2928932,4.29289322 L10,4 L8,2 L14,2 L14,4 L14,8 L13,7 L11.7071068,5.70710678 L7.87867966,9.53553391 L6.46446609,8.12132034 L10.2928932,4.29289322 Z M12,10 L14,10 L14,14 L2,14 L2,2 L6,2 L6,4 L4,4 L4,12 L12,12 L12,10 Z"/>
+</svg>
+</p>
+            
+              <h4 class="post-metadata">ASCII Art iOS Keyboard</h4>
+            
+          </div>
+        </div>
+
+      </a>
+      
+      
+    
+      
+      
+
+      <a href="/tone/"  class="post-card">
+
+        <div class="post-card-image post-card-image-">
+          <img src="/_img/tone/thumb.jpg" draggable="false">
+        </div>
+
+        <div class="post-info-wrapper">
+          <div class="post-info post-info-">
+            <p class="post-title">Tone</p>
+            
+              <h4 class="post-metadata">Email conscientiously</h4>
+            
+          </div>
+        </div>
+
+      </a>
+      
+      
+    
+      
+      
+
+      <a href="https://youtu.be/AQPF_mcLKgo" target='_blank' class="post-card">
+
+        <div class="post-card-image post-card-image-">
+          <img src="/_img/settl/thumb.jpg" draggable="false">
+        </div>
+
+        <div class="post-info-wrapper">
+          <div class="post-info post-info-">
+            <p class="post-title">Settl<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.2928932,4.29289322 L10,4 L8,2 L14,2 L14,4 L14,8 L13,7 L11.7071068,5.70710678 L7.87867966,9.53553391 L6.46446609,8.12132034 L10.2928932,4.29289322 Z M12,10 L14,10 L14,14 L2,14 L2,2 L6,2 L6,4 L4,4 L4,12 L12,12 L12,10 Z"/>
+</svg>
+</p>
+            
+              <h4 class="post-metadata">Comedy Hack Day '15</h4>
+            
+          </div>
+        </div>
+
+      </a>
+      
+      
+    
+      
+      
+
+      <a href="/kickback/"  class="post-card">
+
+        <div class="post-card-image post-card-image-">
+          <img src="/_img/kickback/thumb.png" draggable="false">
+        </div>
+
+        <div class="post-info-wrapper">
+          <div class="post-info post-info-">
+            <p class="post-title">Kickback</p>
+            
+              <h4 class="post-metadata">Automated refunds</h4>
+            
+          </div>
+        </div>
+
+      </a>
+      
+      
+    
+  </div>
+</section>
+</div>
+
+<section class="article-body">
+  <h2 style="margin-bottom: 0.5rem">Credits</h2>
+  <p>Thanks <a href="http://nateparrott.com/">Nate</a> and Alice for your helpful feedback. Thanks to <a href="http://jhil.co">Jeff</a> for giving me a starting point re: Jekyll. Thanks <a href="https://twitter.com/GoldFireStudios">James</a> for <a href="https://howlerjs.com/">howler.js</a>.</p>
+</section>
 
 
-            setTimeout(function(){
-              $("#avatar").attr("src", "smaller.png");
-            }, 200);
+  <footer class="nav">
+  <div class="nav__left">
+    
+      <p>It's the bottom of the page.</p>
+    
+    <p><span class="mobile-hide">© 2018.</span> v1.3, Summer</p>
+  </div>
 
-          }, 1800);
-          setTimeout(blinkingAnimation, (200 + 1800));
-        }
+  <div class="nav__right">
+    <p class="mobile-only"><a id="open-menu" onclick="openMenu()">Click Me</a></p>
+    <p class="mobile-only">© 2018</p>
+    <div class="social-links mobile-hide"><p><a href="https://instagram.com/ikeadrift" target="_blank">Instagram</a></p> <p><a href="https://dribbble.com/bz" target="_blank">Dribbble</a></p> <p><a href="https://twitter.com/ikeadrift" target="_blank">Twitter</a></p> <p><a href="https://linkedin.com/in/benjaminzweig/" target="_blank">Linkedin</a></p></div>
+    <p class="mobile-hide">There's always <a href="mailto:benjamin@ikeadrift.com">Email</a>.</p>
+  </div>
+</footer>
 
-        blinkingAnimation();
-      });
-      </script>
-    </body>
-    </html>
+
+</div>
+
+</body>
+</html>
