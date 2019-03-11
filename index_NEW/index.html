@@ -188,7 +188,6 @@
 
         document.querySelector(".drum-machine__item--" + instrument).onmousedown = function() {
           mouseHandler(this);
-          console.log(this);
           sounds[instrument].play();
         };
       })
