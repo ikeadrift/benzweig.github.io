@@ -5,16 +5,16 @@
     <meta charset="utf-8" />
     <title>Benjamin Zweig</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Summer 2018" />
+    <meta name="description" content="ikeadrift" />
     <meta name="robots" content="NOODP, index, follow" />
     <meta itemprop="name" content="Benjamin T. F. Zweig">
-    <meta itemprop="description" content="Summer 2018">
+    <meta itemprop="description" content="ikeadrift">
     <meta itemprop="image" content="/_img/share.png">
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@ikeadrift">
     <meta name="twitter:title" content="Benjamin T. F. Zweig">
-    <meta name="twitter:description" content="Summer 2018">
+    <meta name="twitter:description" content="ikeadrift">
     <meta name="twitter:creator" content="@ikeadrift">
     <meta name="twitter:image:src" content="/_img/share.png">
     <meta name="twitter:domain" content="ikeadrift.com">
@@ -23,7 +23,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="ikeadrift.com/" />
     <meta property="og:image" content="/_img/share.png" />
-    <meta property="og:description" content="Summer 2018" />
+    <meta property="og:description" content="ikeadrift" />
     <!-- Apple Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114.png" />
@@ -235,15 +235,16 @@
 
       document.onkeydown = function (e) {
         e = e || window.event;
+        if (e.repeat) { return }
         //clearTimeout(helperTimer);
         // document.querySelector('.helper-text').classList.remove('helper-text--animated');
         function keyHandler(inputSound) {
           // inputSound.classList.remove('sound-played');
-          inputSound.querySelector(".drum-machine__item-key").classList.remove('sound-played');
+          inputSound.querySelector(".drum-machine__item-key").classList.remove('key-pressed-hold');
           inputSound.querySelector(".drum-machine__item-glyph").classList.remove('sound-played-glyph');
           setTimeout(function(){
             // inputSound.classList.add('sound-played');
-            inputSound.querySelector(".drum-machine__item-key").classList.add('sound-played');
+            inputSound.querySelector(".drum-machine__item-key").classList.add('key-pressed-hold');
             inputSound.querySelector(".drum-machine__item-glyph").classList.add('sound-played-glyph');
           }, 0.5);
         }
@@ -289,6 +290,45 @@
           //document.querySelector(".drum-machine__item--cowbell").classList.add("drum-intro");
           sounds['cowbell'].play();
           // keyHandler(key_cowbell);
+          keyHandler(document.getElementsByClassName("drum-machine__item--cowbell")[0]);
+        }
+      };
+
+      document.onkeyup = function (e) {
+        e = e || window.event;
+        //clearTimeout(helperTimer);
+        // document.querySelector('.helper-text').classList.remove('helper-text--animated');
+        function keyHandler(inputSound) {
+          // inputSound.classList.remove('sound-played');
+          inputSound.querySelector(".drum-machine__item-key").classList.remove('key-pressed-hold');
+        }
+
+        // A
+        if(e.keyCode == "81"){
+          keyHandler(document.getElementsByClassName("drum-machine__item--kick")[0]);
+        }
+        // S
+        if(e.keyCode == "87"){
+          keyHandler(document.getElementsByClassName("drum-machine__item--snare")[0]);
+        }
+        // D
+        if(e.keyCode == "69"){
+          keyHandler(document.getElementsByClassName("drum-machine__item--clap")[0]);
+        }
+        // F
+        if(e.keyCode == "82"){
+          keyHandler(document.getElementsByClassName("drum-machine__item--closed")[0]);
+        }
+        // G
+        if(e.keyCode == "84"){
+          keyHandler(document.getElementsByClassName("drum-machine__item--open")[0]);
+        }
+        // H
+        if(e.keyCode == "89"){
+          keyHandler(document.getElementsByClassName("drum-machine__item--cymbal")[0]);
+        }
+        // J
+        if(e.keyCode == "85"){
           keyHandler(document.getElementsByClassName("drum-machine__item--cowbell")[0]);
         }
       };
