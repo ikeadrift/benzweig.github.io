@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="4" height="4" x="13" y="8" stroke="#9EA1A9" stroke-width="2"/>
+    <rect width="7" height="2" x="2" y="9" fill="#9EA1A9"/>
+    <polyline stroke="#9EA1A9" stroke-width="2" points="6 7 9 10 6 13"/>
+  </g>
+</svg>

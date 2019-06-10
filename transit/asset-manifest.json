@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/transit/static/css/main.2535aa86.chunk.css",
+    "main.js": "/transit/static/js/main.4541b41b.chunk.js",
+    "main.js.map": "/transit/static/js/main.4541b41b.chunk.js.map",
+    "runtime~main.js": "/transit/static/js/runtime~main.56c7c4f4.js",
+    "runtime~main.js.map": "/transit/static/js/runtime~main.56c7c4f4.js.map",
+    "static/js/2.8d778672.chunk.js": "/transit/static/js/2.8d778672.chunk.js",
+    "static/js/2.8d778672.chunk.js.map": "/transit/static/js/2.8d778672.chunk.js.map",
+    "index.html": "/transit/index.html",
+    "precache-manifest.ae27c05eb30820b3d0e40fbf00412152.js": "/transit/precache-manifest.ae27c05eb30820b3d0e40fbf00412152.js",
+    "service-worker.js": "/transit/service-worker.js",
+    "static/css/main.2535aa86.chunk.css.map": "/transit/static/css/main.2535aa86.chunk.css.map",
+    "static/media/arrivaltime.svg": "/transit/static/media/arrivaltime.adc83e09.svg",
+    "static/media/closeststation.svg": "/transit/static/media/closeststation.a87d7fbd.svg",
+    "static/media/tripduration.svg": "/transit/static/media/tripduration.9f5a97ef.svg"
+  }
+}
