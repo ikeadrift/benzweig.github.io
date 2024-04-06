@@ -82,52 +82,6 @@
 
     <div class="content">
 
-  <header class="nav" id="header">
-  <div class="social-links-experiment">
-    
-      <p>Benjamin T. F. <s>Z</s>.</p>
-    
-    <p class="mobile-only"><a id="open-menu" onclick="openMenu()">Click Me</a></p>
-    <p class="mobile-hide"><a href="mailto:benjamin@ikeadrift.com">Email</a></p>
-    <p class="mobile-hide"><a href="https://www.are.na/benjamin-zweig" target="_blank">Are.na</a></p>
-    <p class="mobile-hide"><a href="https://instagram.com/ikeadrift" target="_blank">Instagram</a></p>
-    <p class="mobile-hide"><a href="https://twitter.com/ikeadrift" target="_blank">Twitter</a></p>
-    <p class="mobile-hide"><a href="https://dribbble.com/bz" target="_blank">Dribbble</a></p>
-  </div>
-</header>
-
-<div class="contact-overlay mobile-only hidden" id="contact-overlay">
-  <div class="contact-overlay__content">
-    <div class="contact-overlay__header">
-      <p><a onclick="closeMenu()" id="close-menu">Close</a></p>
-      <p>Thanks</p>
-    </div>
-    <h1><a href="mailto:benjamin@ikeadrift.com" target="_blank">Benjamin <span class="contact-overlay__detail">@ikeadrift.com</span></a></h1>
-    <h1><a href="https://www.are.na/benjamin-zweig" target="_blank">Are.na <span class="contact-overlay__detail">/benjamin-zweig</span></a></h1>
-    <h1><a href="https://instagram.com/ikeadrift" target="_blank">Instagram <span class="contact-overlay__detail">.com/ikeadrift</span></a></h1>
-    <h1><a href="https://twitter.com/ikeadrift" target="_blank">Twitter <span class="contact-overlay__detail">.com/ikeadrift</span></a></h1>
-    <h1><a href="https://dribbble.com/bz" target="_blank">Dribbble <span class="contact-overlay__detail">.com/bz</span></a></h1>
-  </div>
-</div>
-
-<script type="text/javascript">
-  var overlay = document.getElementById('contact-overlay');
-
-  overlay.ontouchmove = e => {
-    e.preventDefault();
-  };
-
-  function openMenu(){
-    overlay.classList.remove('hidden');
-    document.body.classList.add('noscroll');
-  }
-
-  function closeMenu(){
-    overlay.classList.add('hidden');
-    document.body.classList.remove('noscroll');
-  }
-</script>
-
   <section>
   <section class="drum-machine__section">
 <!--   <div class="helper-text mobile-hide">
@@ -367,154 +321,37 @@
 
       // ((((2**((i+2)*.4))/3)-.3333333)*400)+300)
     </script>
-  </div>
-</section>
-
-  <section class="heading">
-  <h1 style="margin-left: -1px">Product Designer building <a href='https://chat.openai.com/' target='_blank'>ChatGPT</a> at <a href='https://openai.com' target='_blank'>OpenAI</a>. Working such that we may love the tools we use each day.</h1>
-</section>
-</section>
-
-<div id="featured" style="display: none">
-  <section class="post-list post-list--featured">
-  <h2 style="margin-bottom: 0.5rem">Featured</h2>
-  <div class="card-wrapper">
-    
-    
-      
-      
-
-      <a href="/twitch/"  class="post-card">
-
-        <div class="post-card-image post-card-image-">
-          <img src="/images/twitch/thumb.jpg" draggable="false">
-        </div>
-
-        <div class="post-info-wrapper">
-          <div class="post-info post-info-">
-            <p class="post-title">Twitch</p>
-            
-              <h4 class="post-metadata">Product Design</h4>
-            
-          </div>
-        </div>
-
-      </a>
-      
-      
-    
-      
-      
-
-      <a href="http://instagram.com/ikeadrift/" target='_blank' class="post-card">
-
-        <div class="post-card-image post-card-image-">
-          <img src="/images/photography/thumb2.png" draggable="false">
-        </div>
-
-        <div class="post-info-wrapper">
-          <div class="post-info post-info-">
-            <p class="post-title">Photography<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M10.2928932,4.29289322 L10,4 L8,2 L14,2 L14,4 L14,8 L13,7 L11.7071068,5.70710678 L7.87867966,9.53553391 L6.46446609,8.12132034 L10.2928932,4.29289322 Z M12,10 L14,10 L14,14 L2,14 L2,2 L6,2 L6,4 L4,4 L4,12 L12,12 L12,10 Z"/>
-</svg>
-</p>
-            
-              <h4 class="post-metadata">Urban Abstraction</h4>
-            
-          </div>
-        </div>
-
-      </a>
-      
-      
-    
-      
-    
-      
-      
-
-      <a href="/hh-design/"  class="post-card">
-
-        <div class="post-card-image post-card-image-">
-          <img src="/images/hh-design/thumb.gif" draggable="false">
-        </div>
-
-        <div class="post-info-wrapper">
-          <div class="post-info post-info-">
-            <p class="post-title">HH Design</p>
-            
-              <h4 class="post-metadata">Community</h4>
-            
-          </div>
-        </div>
-
-      </a>
-      
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-</section>
-</div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
         
-<section class="article-body" style="display: none">
-  <h2 style="margin-bottom: 0.5rem">Work</h2>
+    var today = new Date();
+    var hour = today.getHours();
+    var greeting;
 
-  <p>To view my portfolio, please contact me via any of the methods listed above. Thanks!</p>
+    if (hour >= 5 && hour < 12) {
+        greeting = "Good morning.";
+    } else if (hour >= 12 && hour < 18) {
+        greeting = "Good afternoon.";
+    } else {
+        greeting = "Good evening.";
+    }
+
+    document.getElementById("greeting").innerText = greeting;
+});
+
+    </script>
+  </div>
+</section>
 </section>
 
 <section class="article-body">
-  <h2 style="margin-bottom: 0.5rem">About Me</h2>
-
-  <p>If I could take pictures of one thing for the rest of my life, it'd be construction sites.</p>
-
-  <p>I'm a multidisciplinary designer with keen product intuition and manifold execution skills: interaction/visual design, copywriting, and high-fidelity prototyping. Experienced leveraging and extending design systems.</p>
-
-  <p>Those I work with have mentioned my:</p>
-
-  <ul>
-    <li>Attention to detail and appreciation for consistency.</li>
-    <li>Ability to engage in both micro and macro-level product thinking, and to smoothly transition between the two.</li>
-    <li>Passion for creating and engaging with a rich, supportive crossfunctional design culture.</li>
-  </ul>
+  <!-- <h2 style="margin-bottom: 0.5rem">Benjamin Zweig</h2> -->
+  <p id="greeting">Hello.</p>
+  <p>Member of Design Staff <a href="https://openai.com">OpenAI</a>, previously of <a id="LFE" href="https://lfe.org/">LFE</a>, <a id="Airtable" href="https://www.airtable.com/">Airtable</a>, <a href="https://www.messenger.com/">Messenger</a>, and <a href="https://www.messenger.com/">Twitch</a>.
+  
+  You can reach me on <a href="https://www.messenger.com/">Are.na</a> and <a href="https://www.messenger.com/">Twitter</a>, or at <a href="mailto:benjamin@ikeadrift.com" target="_blank">benjamin@ikeadrift.com</a>. Dance to the beat of your own drum, and remember there's <a href="https://openspaceofdemocracy.files.wordpress.com/2017/01/baldwin-creative-process.pdf">nothing stable</a> under heaven.</p>
+  <p>-b</p>
 </section>
-
-<section class="article-body">
-  <h2 style="margin-bottom: 0.5rem">Credits</h2>
-  <p>Thanks <a href="http://nateparrott.com/" target="_blank">Nate</a> and <a href="https://twitter.com/jac_straw/" target="_blank">Alice</a> for your helpful feedback. Thanks to <a href="http://jhil.co">Jeff</a> for giving me a starting point re: Jekyll. Thanks <a href="https://twitter.com/GoldFireStudios" target="_blank">James</a> for <a href="https://howlerjs.com/" target="_blank">howler.js</a>.</p>
-</section>
-
-
-  <footer class="nav">
-  <div class="nav__left">
-    
-      <p>It's the bottom of the page.</p>
-    
-    <p>v1.3<span class="mobile-hide"> © 2021</span> (Winter)</p>
-  </div>
-
-  <div class="nav__right">
-    <p class="mobile-only"><a id="open-menu" onclick="openMenu()">Click Me</a></p>
-    <p class="mobile-only">© 2019</p>
-    <p class="mobile-hide">Perhaps <a href="mailto:benjamin@ikeadrift.com">Email</a>.</p>
-    <div class="social-links mobile-hide">
-        <p><a href="https://www.are.na/benjamin-zweig" target="_blank">Are.na</a></p>
-        <p><a href="https://instagram.com/ikeadrift" target="_blank">Instagram</a></p>
-        <p><a href="https://twitter.com/ikeadrift" target="_blank">Twitter</a></p>
-        <p><a href="https://dribbble.com/bz" target="_blank">Dribbble</a></p>
-    </div>
-  </div>
-</footer>
-
 
 </div>
 
