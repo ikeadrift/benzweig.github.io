@@ -1,0 +1,17 @@
+{
+  "name": "office-agents",
+  "version": "0.1.0",
+  "description": "Simulated office agents with LLM-powered interactions",
+  "main": "src/server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "socket.io": "^4.7.2",
+    "openai": "^4.16.1",
+    "dotenv": "^16.3.1"
+  }
+}

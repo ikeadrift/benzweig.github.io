@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Office Agents</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.8/browser/pixi.min.js"></script>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <style>
+    body { margin: 0; }
+    #gameCanvas { width: 100vw; height: 100vh; display: block; }
+    #chat { position: fixed; bottom: 0; width: 100%; }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="chat">
+    <input id="userInput" placeholder="Type a message" style="width:80%" />
+    <button id="sendBtn">Send</button>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
